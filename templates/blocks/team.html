@@ -1,0 +1,119 @@
+<!-- Team Section -->
+<section id="{{block_id}}" class="{{template_id}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2
+          class="section-heading"
+          data-field-string="heading"
+        >{{heading}}</h2>
+        <h3
+          class="section-subheading text-muted"
+          data-field-string="sub_heading"
+        >{{sub_heading}}</h3>
+      </div>
+    </div>
+    <div class="row clearfix" data-field-array="team">
+      {% for item in team %}
+      <div class="col-sm-4">
+        <div class="team-member" data-field-array-item>
+          <img
+            src="{{ item.image }}"
+            class="img-responsive img-circle"
+            data-field-string-file="team[{{loop.index0}}].image"
+            no-data-placement="top"
+            no-data-inset="true"
+            alt="{{ item.heading }}" />
+          <h4
+            data-field-string="team[{{loop.index0}}].heading"
+          >{{ item.heading }}</h4>
+          <p
+            class="text-muted"
+            data-field-string="team[{{loop.index0}}].text"
+            data-toolbar-buttons="['bold', 'italic', 'underline', 'anchor']"
+          >{{ item.text }}</p>
+          <ul class="list-inline social-buttons">
+            {% for link_item in item.social_links %}
+              <li>
+                <a
+                  href="{{ link_item.link }}"
+                  data-field-string-ui-widget-icon="item.social_links[{{loop.index0}}].icon"
+                  data-field-string-format-uri="item.social_links[{{loop.index0}}].link"
+                  data-placement="bottom"
+                ><i class="fa fa-{{ link_item.icon }}"></i></a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p
+          class="large text-muted"
+          data-field-text="text"
+          data-toolbar-buttons="['bold', 'italic', 'underline', 'anchor']"
+        >{{ text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Theme CSS -->
+<style>
+.team-member {
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+.team-member ul.social-buttons {
+  margin-bottom: 0;
+}
+.team-member ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team-member ul.social-buttons li a:hover,
+.team-member ul.social-buttons li a:focus,
+.team-member ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+</style>
+
+<!-- Style CSS -->
+<style>
+/* Team */
+#{{block_id}} {
+  background-color: {{ style.block.bg_color }};
+  padding-top: {{ style.block.padding_top }}px;
+  padding-bottom: {{ style.block.padding_bottom }}px;
+}
+#{{block_id}} ul.social-buttons li a:hover,
+#{{block_id}} ul.social-buttons li a:focus,
+#{{block_id}} ul.social-buttons li a:active {
+  background-color: {{ style.block.social_links_hover_bg_color }};
+}
+</style>
