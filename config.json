@@ -662,7 +662,7 @@
               "bg_image_position_top": {
                 "type": "integer",
                 "title": "Image position top",
-                "minimum": 0,
+                "minimum": -300,
                 "maximum": 150
               }
             }
