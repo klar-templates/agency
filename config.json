@@ -259,7 +259,6 @@
         "block": {
           "title": "Block",
           "type": "object",
-          "ui:css_selector": "body .block > section",
           "properties": {
             "padding_top": {
               "$ref": "#/definitions/block_padding_top"
