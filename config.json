@@ -729,7 +729,8 @@
                     "format": "color",
                     "default": "transparent",
                     "ui:css_selector": "${block_id_css_id} .fa-inverse",
-                    "ui:css_property": "color"
+                    "ui:css_property": "color",
+                    "default": "#ffffff"
                   },
                   "padding_top": {
                     "$ref": "#/definitions/block_padding_top"
