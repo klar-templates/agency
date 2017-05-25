@@ -6,15 +6,15 @@
         <h2
           class="section-heading"
           data-field-string="heading"
-        >{{heading}}</h2>
+        >{{block.heading}}</h2>
         <h3
           class="section-subheading text-muted"
           data-field-string="sub_heading"
-        >{{sub_heading}}</h3>
+        >{{block.sub_heading}}</h3>
       </div>
     </div>
     <div class="row" data-field-array="items">
-      {% for item in items %}
+      {% for item in block.items %}
         <div class="col-md-4 col-sm-6 portfolio-item">
           <div data-field-array-item>
             <a href="#{{block_id}}-modal-{{loop.index}}" class="portfolio-link" data-toggle="modal">
@@ -46,7 +46,7 @@
   
   <!-- Portfolio Modals -->
   <!-- Use the modals below to showcase details about your portfolio projects! -->
-  {% for item in items %}
+  {% for item in block.items %}
   <!-- Portfolio Modal {{loop.index}} -->
   <div class="{{block_id}}-modal portfolio-modal modal fade" id="{{block_id}}-modal-{{loop.index}}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -241,75 +241,69 @@
 
 <!-- Style CSS -->
 <style>
-  /* Base */
-  #{{block_id}} h1, #{{block_id}} h2, #{{block_id}} h3, #{{block_id}} h4, #{{block_id}} h5, #{{block_id}} h6 {
-    color: {{ style.base.title_text_color }};
-  }
-  #{{block_id}} h3.section-subheading {
-    color: {{ style.base.subtitle_text_color }};
-  }
-  #{{block_id}} p {
-    color: {{ style.base.text_color }};
-  }
-  #{{block_id}} .text-muted {
-    color: {{ style.base.muted_text_color }};
-  }
-  #{{block_id}} a {
-    color: {{ style.base.link_text_color }};
-  }
-  #{{block_id}} a:hover,
-  #{{block_id}} a:focus,
-  #{{block_id}} a:active {
-    color: {{ style.base.link_hover_text_color }};
-  }
-  #{{block_id}} .btn-primary,
-  #{{block_id}} .btn-primary:hover,
-  #{{block_id}} .btn-primary:focus,
-  #{{block_id}} .btn-primary:active {
-    background-color: {{ style.base.primary_bg_color }};
-    border-color: {{ style.base.primary_bg_color }};
-  }
-  #{{block_id}} .text-primary {
-    color: {{ style.base.primary_text_color }};
-  }
-  #{{block_id}} ::selection {
-    color: {{ style.base.selection_text_color }};
-    background: {{ style.base.selection_bg_color }};
-  }
-  
-  /* Block */
-  #{{block_id}} {
-    color: {{ style.block.text_color }};
-    {% if style.block.padding_top >= 0 %}
-    padding-top: {{ style.block.padding_top }}px;
-    {% endif %}
-    {% if style.block.padding_bottom >= 0 %}
-    padding-bottom: {{ style.block.padding_bottom }}px;
-    {% endif %}
-  }
-  #{{block_id}} {
-    background-color: {{ style.block.bg_color }};
-  }
-  #{{block_id}} .portfolio-item .portfolio-link .portfolio-hover {
-    background-color: {{ style.block.hover_content_bg_color }};
-  }
-  #{{block_id}} .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    color: {{ style.block.hover_content_icon_color }};
-  }
-  #{{block_id}} .portfolio-item .portfolio-caption {
-    background-color: {{ style.block.caption_bg_color }};
-  }
-  #{{block_id}} .portfolio-item .portfolio-caption h4 {
-    color: {{ style.block.caption_title_text_color }};
-  }
-  #{{block_id}} .portfolio-item .portfolio-caption p {
-    color: {{ style.block.caption_text_text_color }};
-  }
-  .{{block_id}}-modal .modal-content {
-    background-color: {{ style.block.item_bg_color }};
-  }
-  .{{block_id}}-modal .close-modal .lr,
-  .{{block_id}}-modal .close-modal .lr .rl {
-    background-color: {{ style.block.item_close_btn_color }};
-  }
+/* Block */
+#{{block_id}} {
+  background-color: {{ block.style.block.bg_color }};
+  color: {{ block.style.block.text_color }};
+  padding-top: {{ block.style.block.padding_top }}px;
+  padding-bottom: {{ block.style.block.padding_bottom }}px;
+}
+#{{block_id}} .portfolio-item .portfolio-link .portfolio-hover {
+  background-color: {{ block.style.block.hover_content_bg_color }};
+}
+#{{block_id}} .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  color: {{ block.style.block.hover_content_icon_color }};
+}
+#{{block_id}} .portfolio-item .portfolio-caption {
+  background-color: {{ block.style.block.caption_bg_color }};
+}
+#{{block_id}} .portfolio-item .portfolio-caption h4 {
+  color: {{ block.style.block.caption_title_text_color }};
+}
+#{{block_id}} .portfolio-item .portfolio-caption p {
+  color: {{ block.style.block.caption_text_text_color }};
+}
+.{{block_id}}-modal .modal-content {
+  background-color: {{ block.style.block.item_bg_color }};
+}
+.{{block_id}}-modal .close-modal .lr,
+.{{block_id}}-modal .close-modal .lr .rl {
+  background-color: {{ block.style.block.item_close_btn_color }};
+}
+
+/* Base */
+#{{block_id}} {
+  color: {{ block.style.base.text_color }};
+}
+#{{block_id}} h1, #{{block_id}} h2, #{{block_id}} h3, #{{block_id}} h4, #{{block_id}} h5, #{{block_id}} h6 {
+  color: {{ block.style.base.title_text_color }};
+}
+#{{block_id}} h3.section-subheading {
+  color: {{ block.style.base.subtitle_text_color }};
+}
+#{{block_id}} p {
+  color: {{ block.style.base.text_color }};
+}
+#{{block_id}} a {
+  color: {{ block.style.base.link_text_color }};
+}
+#{{block_id}} a:hover,
+#{{block_id}} a:focus,
+#{{block_id}} a:active {
+  color: {{ block.style.base.link_hover_text_color }};
+}
+#{{block_id}} .btn-primary,
+#{{block_id}} .btn-primary:hover,
+#{{block_id}} .btn-primary:focus,
+#{{block_id}} .btn-primary:active {
+  background-color: {{ block.style.base.primary_color }};
+  border-color: {{ block.style.base.primary_color }};
+}
+#{{block_id}} .text-primary {
+  color: {{ block.style.base.primary_color }};
+}
+#{{block_id}} ::selection {
+  color: {{ block.style.base.selection_text_color }};
+  background: {{ block.style.base.selection_bg_color }};
+}
 </style>
