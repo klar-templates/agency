@@ -54,13 +54,9 @@
   padding-top: {{ style.block.padding_top }}px;
   padding-bottom: {{ style.block.padding_bottom }}px;
 }
-{% if block.style.block.icon_bg_color %}
-  #{{block_id}} .text-primary { color: {{ style.block.icon_bg_color }}; }
-{% endif %}
-{% if block.style.block.icon_color %}
-  #{{block_id}} .fa-inverse { color: {{ style.block.icon_color }}; }
-{% endif %}
-  
+#{{block_id}} .text-primary { color: {{ block.style.block.icon_bg_color }}; }
+#{{block_id}} .fa-inverse { color: {{ block.style.block.icon_color }}; }
+
 /* Base */
 #{{block_id}} {
   background-color: {{ block.style.block.bg_color }};
