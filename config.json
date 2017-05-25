@@ -206,7 +206,7 @@
         "colors": {
           "title": "Färger",
           "type": "object",
-          "ui:css_selector": "body",
+          "no_ui:css_selector": "body",
           "properties": {
             "bg_color": {
               "$ref": "#/definitions/bg_color"
@@ -240,7 +240,7 @@
         "typography": {
           "title": "Typography",
           "type": "object",
-          "ui:css_selector": "body",
+          "no_ui:css_selector": "body",
           "properties": {
             "title_font_family": {
               "$ref": "#/definitions/title_font_family"
