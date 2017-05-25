@@ -1830,8 +1830,8 @@
           }
         ],
         "style": {
-          "padding_top": "50px",
-          "padding_bottom": "50px"
+          "adding_top": "50px",
+          "adding_bottom": "50px"
         }
       },
       "contact": {
