@@ -1582,7 +1582,9 @@
         ],
         "style": {
           "block": {
-            "bg_color": "{{theme.colors.bg_color}}"
+            "bg_color": "{{theme.colors.bg_color}}",
+            "padding_top": "{{theme.block.padding_top}}",
+            "padding_bottom": "{{theme.block.padding_bottom}}"
           }
         }
       },
