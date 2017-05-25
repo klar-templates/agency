@@ -27,8 +27,8 @@
               {% if item.open_in_new_page %}
                 target="_blank"
               {% endif %}
-              data-field-string="block.navigation[{{loop.index0}}].title"
-              data-field-string-format-uri="block.navigation[{{loop.index0}}].link"
+              data-field-string="navigation[{{loop.index0}}].title"
+              data-field-string-format-uri="navigation[{{loop.index0}}].link"
               data-placement="bottom"
             >{{ item.title }}</a>
           </li>
