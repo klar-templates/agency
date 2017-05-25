@@ -729,8 +729,7 @@
                     "format": "color",
                     "default": "transparent",
                     "ui:css_selector": "${block_id_css_id} .fa-inverse",
-                    "ui:css_property": "color",
-                    "default": "#ffffff"
+                    "ui:css_property": "color"
                   },
                   "padding_top": {
                     "$ref": "#/definitions/block_padding_top"
@@ -1584,6 +1583,7 @@
         "style": {
           "block": {
             "bg_color": "{{theme.colors.bg_color}}",
+            "icon_color": "#111111",
             "padding_top": "{{theme.block.padding_top}}",
             "padding_bottom": "{{theme.block.padding_bottom}}"
           }
