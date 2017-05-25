@@ -50,7 +50,7 @@
 <style>
 /* Block */
 #{{block_id}} {
-  
+  background-color: {{ block.style.block.bg_color }};
   padding-top: {{ style.block.padding_top }}px;
   padding-bottom: {{ style.block.padding_bottom }}px;
 }
@@ -59,10 +59,7 @@
 
 /* Base */
 #{{block_id}} {
-  background-color: {{ block.style.block.bg_color }};
   color: {{ block.style.base.text_color }};
-  padding-top: {{ block.style.base.padding_top }}px;
-  padding-bottom: {{ block.style.base.padding_bottom }}px;
 }
 #{{block_id}} h1, #{{block_id}} h2, #{{block_id}} h3, #{{block_id}} h4, #{{block_id}} h5, #{{block_id}} h6 {
   color: {{ block.style.base.title_text_color }};
