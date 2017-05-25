@@ -1,5 +1,5 @@
 <!-- Clients -->
-<aside id="{{block_id}}" class="{{template_id}}">
+<aside id="{{id}}" class="{{type_id}}">
   <div class="container">
     <div class="row">
       {% for client in items %}
@@ -15,7 +15,7 @@
 
 <!-- Theme CSS -->
 <style>
-.clients img {
+.{{ type_id }} img {
   margin: 50px auto;
 }
 </style>
@@ -23,7 +23,7 @@
 <!-- Style CSS -->
 <style>
 /* Block */
-#{{block_id}} {
+#{{ id }} {
   background-color: {{ style.block.bg_color }};
 }
 </style>
