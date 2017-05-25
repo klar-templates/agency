@@ -1581,7 +1581,9 @@
           }
         ],
         "style": {
-          
+          "block": {
+            "bg_color": "{{theme.colors.bg_color}}"
+          }
         }
       },
       "portfolio": {
