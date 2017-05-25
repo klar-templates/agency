@@ -1583,7 +1583,7 @@
         "style": {
           "block": {
             "bg_color": "{{theme.colors.bg_color}}",
-            "icon_color": "#111111",
+            "icon_color": "#ffffff",
             "padding_top": "{{theme.block.padding_top}}",
             "padding_bottom": "{{theme.block.padding_bottom}}"
           }
