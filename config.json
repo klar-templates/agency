@@ -1198,42 +1198,6 @@
                   "bg_color": {
                     "ui:css_selector": "${block_id_css_id}",
                     "$ref": "#/definitions/bg_color"
-                  },
-                  "padding_top": {
-                    "$ref": "#/definitions/block_padding_top"
-                  },
-                  "padding_bottom": {
-                    "$ref": "#/definitions/block_padding_bottom"
-                  }
-                }
-              },
-              "base": {
-                "title": "Base",
-                "type": "object",
-                "properties": {
-                  "title_text_color": {
-                    "$ref": "#/definitions/title_text_color"
-                  },
-                  "subtitle_text_color": {
-                    "$ref": "#/definitions/subtitle_text_color"
-                  },
-                  "text_color": {
-                    "$ref": "#/definitions/text_color"
-                  },
-                  "link_text_color": {
-                    "$ref": "#/definitions/link_text_color"
-                  },
-                  "link_hover_text_color": {
-                    "$ref": "#/definitions/link_hover_text_color"
-                  },
-                  "primary_color": {
-                    "$ref": "#/definitions/primary_color"
-                  },
-                  "selection_text_color": {
-                    "$ref": "#/definitions/selection_text_color"
-                  },
-                  "selection_bg_color": {
-                    "$ref": "#/definitions/selection_bg_color"
                   }
                 }
               }
@@ -1830,8 +1794,7 @@
           }
         ],
         "style": {
-          "adding_top": "50px",
-          "adding_bottom": "50px"
+          
         }
       },
       "contact": {
