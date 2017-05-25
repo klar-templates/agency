@@ -1582,11 +1582,11 @@
         ],
         "style": {
           "block": {
-            "bg_color": "{{theme.colors.bg_color}}",
-            "icon_bg_color": "{{theme.colors.primary_color}}",
-            "icon_color": "#ffffff",
-            "padding_top": "{{theme.block.padding_top}}",
-            "padding_bottom": "{{theme.block.padding_bottom}}"
+            "no_bg_color": "{{theme.colors.bg_color}}",
+            "no_icon_bg_color": "{{theme.colors.primary_color}}",
+            "no_icon_color": "#ffffff",
+            "no_padding_top": "{{theme.block.padding_top}}",
+            "no_padding_bottom": "{{theme.block.padding_bottom}}"
           }
         }
       },
