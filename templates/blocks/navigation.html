@@ -11,7 +11,7 @@
         href="#page-top"
         data-field-string="logo_text"
         data-toolbar-buttons="['bold', 'italic', 'underline']"
-      >{% if style.logo.show %}<img src="{{ style.logo.image }}" alt="Logo" />{% else %}{{ logo_text }}{% endif %}</a>
+      >{% if block.style.logo.show %}<img src="{{ block.style.logo.image }}" alt="Logo" />{% else %}{{ block.logo_text }}{% endif %}</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -19,7 +19,7 @@
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
-        {% for item in navigation %}
+        {% for item in block.navigation %}
           <li>
             <a
               class="page-scroll"
@@ -27,8 +27,8 @@
               {% if item.open_in_new_page %}
                 target="_blank"
               {% endif %}
-              data-field-string="navigation[{{loop.index0}}].title"
-              data-field-string-format-uri="navigation[{{loop.index0}}].link"
+              data-field-string="block.navigation[{{loop.index0}}].title"
+              data-field-string-format-uri="block.navigation[{{loop.index0}}].link"
               data-placement="bottom"
             >{{ item.title }}</a>
           </li>
@@ -37,7 +37,7 @@
     </div>
     <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container-fluid -->{% if style.navbar.show_overlay %}
+  <!-- /.container-fluid -->{% if block.style.navbar.show_overlay %}
   <div class="overlay"></div>
   {% endif %}
 </nav>
@@ -144,84 +144,84 @@
 <style>
   /* Block */
   .navbar-custom {
-    background-color: {{ style.navbar.bg_color }};
-    border-bottom: solid {{ style.navbar.border_bottom_width }}px {{ style.navbar.border_bottom_color }};
-    {% if style.navbar.sticky === false %}
+    background-color: {{ block.style.navbar.bg_color }};
+    border-bottom: solid {{ block.style.navbar.border_bottom_width }}px {{ block.style.navbar.border_bottom_color }};
+    {% if block.style.navbar.sticky === false %}
     position: absolute;
     {% endif %};
   }
   @media (min-width: 768px) {
     .navbar-custom {
-      background-color: {% if style.navbar.transparent %} transparent {% else %} {{ style.navbar.bg_color }} {% endif %};
-      padding-top: {{ style.navbar.padding_top }}px;
-      padding-bottom: {{ style.navbar.padding_bottom }}px;
+      background-color: {% if block.style.navbar.transparent %} transparent {% else %} {{ block.style.navbar.bg_color }} {% endif %};
+      padding-top: {{ block.style.navbar.padding_top }}px;
+      padding-bottom: {{ block.style.navbar.padding_bottom }}px;
     }
   } 
   .navbar-custom.affix {
-    background-color: {{ style.navbar.bg_color }};
+    background-color: {{ block.style.navbar.bg_color }};
   }
   .navbar-custom.affix .overlay {
     opacity: 1;
   }
   .navbar-custom .overlay {
-    background-color: {{ style.navbar.overlay_bg_color }};
-    opacity: {{ style.navbar.overlay_opacity/100 }};
+    background-color: {{ block.style.navbar.overlay_bg_color }};
+    opacity: {{ block.style.navbar.overlay_opacity/100 }};
   }
   /* Logo */
   .navbar-custom .navbar-brand {
-    color: {{ style.logo.text_color }};
-    font-family: "{{ style.logo.font_family }}","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: {{ block.style.logo.text_color }};
+    font-family: "{{ block.style.logo.font_family }}","Helvetica Neue",Helvetica,Arial,sans-serif;
   }
-  {% if style.logo.show %}
+  {% if block.style.logo.show %}
     @media (min-width: 768px) {
       .navbar-custom .navbar-brand {
-        padding-top: {{ style.logo.padding_top }}px;
-        width:{{ style.logo.width }}px;
+        padding-top: {{ block.style.logo.padding_top }}px;
+        width:{{ block.style.logo.width }}px;
       }
     } 
   {% endif %}
   .navbar-custom .navbar-brand:hover {
-    color: {{ style.logo.text_hover_color }};
+    color: {{ block.style.logo.text_hover_color }};
   }
   .navbar-custom .navbar-brand:active {
-    color: {{ style.logo.text_active_color }};
+    color: {{ block.style.logo.text_active_color }};
   }
   .navbar-custom .navbar-brand:focus {
-    color: {{ style.logo.text_focus_color }};
+    color: {{ block.style.logo.text_focus_color }};
   }
   /* Navigation */
   .navbar-custom .nav li a {
-    color: {{ style.navigation.text_color }};
+    color: {{ block.style.navigation.text_color }};
   }
   .navbar-custom .nav li a:hover {
-    color: {{ style.navigation.text_hover_color }};
+    color: {{ block.style.navigation.text_hover_color }};
   }
   .navbar-custom .nav li a:focus {
-    color: {{ style.navigation.text_focus_color }};
+    color: {{ block.style.navigation.text_focus_color }};
   }
   .navbar-custom .nav li a {
-    background-color: {{ style.navigation.bg_text_color }};
+    background-color: {{ block.style.navigation.bg_text_color }};
   }
   .navbar-custom .nav li a:hover {
-    background-color: {{ style.navigation.bg_text_hover_color }};
+    background-color: {{ block.style.navigation.bg_text_hover_color }};
   }
   .navbar-custom .navbar-nav > .active > a,
   .navbar-custom .navbar-nav > .active > a:hover {
-    background-color: {{ style.navigation.bg_text_active_color }};
+    background-color: {{ block.style.navigation.bg_text_active_color }};
   }
   .navbar-custom .navbar-nav > .active > a:focus {
-    background-color: {{ style.navigation.bg_text_focus_color }};
+    background-color: {{ block.style.navigation.bg_text_focus_color }};
   }
   .navbar-custom .navbar-toggle {
-    background-color: {{ style.navigation.mobile_menu_button_bg_color }};
-    border-color: {{ style.navigation.mobile_menu_button_bg_color }};
+    background-color: {{ block.style.navigation.mobile_menu_button_bg_color }};
+    border-color: {{ block.style.navigation.mobile_menu_button_bg_color }};
   }
   .navbar-custom .navbar-toggle:hover {
-    background-color: {{ style.navigation.mobile_menu_button_hover_bg_color }};
-    border-color: {{ style.navigation.mobile_menu_button_hover_bg_color }};
+    background-color: {{ block.style.navigation.mobile_menu_button_hover_bg_color }};
+    border-color: {{ block.style.navigation.mobile_menu_button_hover_bg_color }};
   }
   .navbar-custom .navbar-toggle:focus {
-    background-color: {{ style.navigation.mobile_menu_button_focus_bg_color }};
-    border-color: {{ style.navigation.mobile_menu_button_focus_bg_color }};
+    background-color: {{ block.style.navigation.mobile_menu_button_focus_bg_color }};
+    border-color: {{ block.style.navigation.mobile_menu_button_focus_bg_color }};
   }
 </style>
