@@ -8,7 +8,7 @@
       "format": "color",
       "ui:css_selector": "body",
       "ui:css_property": "background-color",
-      "efault": "#/settings/theme/colors/bg_color"
+      "default": "#ffffff"
     },
     "title_text_color": {
       "type": "string",
@@ -16,7 +16,7 @@
       "format": "color",
       "ui:css_selector": "${block_id_css_id} .section-heading, ${block_id_css_id} h1, ${block_id_css_id} h2, ${block_id_css_id} 3, ${block_id_css_id} h4, ${block_id_css_id} h5, ${block_id_css_id} h6",
       "ui:css_property": "color",
-      "efault": "#/settings/theme/colors/title_text_color"
+      "default": "#333333"
     },
     "subtitle_text_color": {
       "type": "string",
@@ -24,7 +24,7 @@
       "format": "color",
       "ui:css_selector": "body ${block_id_css_id} h3.section-subheading",
       "ui:css_property": "color",
-      "efault": "#/settings/theme/colors/subtitle_text_color"
+      "default": "#777777"
     },
     "text_color": {
       "type": "string",
