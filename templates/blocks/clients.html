@@ -2,7 +2,7 @@
 <aside id="{{ block_id }}" class="{{ template_id }}">
   <div class="container">
     <div class="row">
-      {% for client in items %}
+      {% for client in block.items %}
       <div class="col-md-3 col-sm-6">
         <a href="{{ client.url }}">
         	<img src="{{ client.logo }}" class="img-responsive img-centered" alt="">
