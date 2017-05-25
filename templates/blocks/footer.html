@@ -5,11 +5,11 @@
         <span
           class="copyright"
           data-field-string="copyright_text"
-        >{{ copyright_text }}</span>
+        >{{ block.copyright_text }}</span>
       </div>
       <div class="col-md-4" style="position: static">
         <ul class="list-inline social-buttons">
-          {% for item in social_links %}
+          {% for item in block.social_links %}
             <li>
               <a
                 href="{{ item.link }}"
@@ -23,7 +23,7 @@
       </div>
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
-          {% for item in quick_links %}
+          {% for item in block.quick_links %}
             <li>
               <a
                 href="{{ item.link }}"
@@ -85,13 +85,13 @@ footer ul.social-buttons li a:active {
 <!-- Style CSS -->
 <style>
 #{{template_id}} {
-  background-color: {{ style.block.bg_color }};
-  padding-top: {{ style.block.padding_top }}px;
-  padding-bottom: {{ style.block.padding_bottom }}px;
+  background-color: {{ block.style.block.bg_color }};
+  padding-top: {{ block.style.block.padding_top }}px;
+  padding-bottom: {{ block.style.block.padding_bottom }}px;
 }
 #{{template_id}} ul.social-buttons li a:hover,
 #{{template_id}} ul.social-buttons li a:focus,
 #{{template_id}} ul.social-buttons li a:active {
-  background-color: {{ style.block.social_links_hover_bg_color }};
+  background-color: {{ block.style.block.social_links_hover_bg_color }};
 }
 </style>
