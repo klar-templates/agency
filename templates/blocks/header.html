@@ -10,30 +10,30 @@
   no-data-inset="true">
   <div class="container">
     <div class="intro-text">
-      {% if show_subtitle %}
+      {% if block.show_subtitle %}
       <div
         class="intro-lead-in"
         data-field-string="subtitle"
-      >{{subtitle}}</div>
+      >{{block.subtitle}}</div>
       {% endif %}
-      {% if show_title %}
+      {% if block.show_title %}
       <div
         class="intro-heading"
         data-field-string="title"
-      >{{ title }}</div>
+      >{{ block.title }}</div>
       {% endif %}
-      {% if show_button %}
+      {% if block.show_button %}
       <a
-        href="{{ link }}"
+        href="{{ block.link }}"
         class="page-scroll btn btn-xl"
         data-field-string="link_text"
         data-field-string-format-uri="link"
         data-placement="bottom"
-      >{{link_text}}</a>
+      >{{block.link_text}}</a>
       {% endif %}
     </div>
   </div>
-  {% if style.show_overlay %}
+  {% if block.style.show_overlay %}
   <div class="overlay"></div>
   {% endif %}
 </header>
@@ -113,39 +113,39 @@
 <!-- Style CSS -->
 <style>
 #{{block_id}} {
-  background-image: url({{ image }});
-  background-position: 0 {{ style.bg_image_position_top }}px;
-  text-align:{{ style.text_align }};
+  background-image: url({{ block.image }});
+  background-position: 0 {{ block.style.bg_image_position_top }}px;
+  text-align:{{ block.style.text_align }};
 }
 #{{block_id}} .intro-text .intro-lead-in {
-  color: {{ style.subtitle_text_color }};
+  color: {{ block.style.subtitle_text_color }};
 }
 #{{block_id}} .intro-text .intro-heading {
-  color: {{ style.title_text_color }};
+  color: {{ block.style.title_text_color }};
 }
 #{{block_id}} .btn-xl,
 #{{block_id}} .btn-xl:hover,
 #{{block_id}} .btn-xl:focus,
 #{{block_id}} .btn-xl:active {
-  background-color: {{ style.button_bg_color }};
-  border-color: {{ style.button_bg_color }};
-  color: {{ style.button_text_color }};
+  background-color: {{ block.style.button_bg_color }};
+  border-color: {{ block.style.button_bg_color }};
+  color: {{ block.style.button_text_color }};
 }
 #{{block_id}} .overlay {
-  background-color: {{ style.overlay_bg_color }};
-  opacity: {{ style.overlay_opacity/100 }};
+  background-color: {{ block.style.overlay_bg_color }};
+  opacity: {{ block.style.overlay_opacity/100 }};
 }
 @media (min-width: 768px) {
   #{{block_id}} {
-    margin-top: {{ style.margin_top }}px;
-    {% if style.full_screen %}
+    margin-top: {{ block.style.margin_top }}px;
+    {% if block.style.full_screen %}
     height: 100vh;
     {% endif %}
   }
   #{{block_id}} .intro-text {
-    margin-top: {{ style.margin_top }}px;
-    padding-top: {{ style.padding_top }}px;
-    padding-bottom: {{ style.padding_bottom }}px;
+    margin-top: {{ block.style.margin_top }}px;
+    padding-top: {{ block.style.padding_top }}px;
+    padding-bottom: {{ block.style.padding_bottom }}px;
   }
 }
 </style>
