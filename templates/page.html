@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -237,12 +238,14 @@
       color: {{ theme.colors.link_hover_text_color }};
     }
     /* Global */
+    /*
     @media (min-width: 768px) {
       section {
-        padding-top: {{ theme.block.padding_top }}px;
-        padding-bottom: {{ theme.block.padding_bottom }}px;
+        padding-top: {{ theme.block.padding_top }};px;
+        padding-bottom: {{ theme.block.padding_bottom }};px;
       }
     }
+    */
     /* Buttons */
     .btn-primary,
     .btn-primary:hover,
@@ -258,14 +261,6 @@
       color: {{ theme.colors.selection_text_color }};
       background: {{ theme.colors.selection_bg_color }};
     }
-    /*
-    @media (min-width: 768px) {
-      section {
-        padding-top: {{ theme.block.padding_top }};px;
-        padding-bottom: {{ theme.block.padding_bottom }};px;
-      }
-    }
-    */
   </style>
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
