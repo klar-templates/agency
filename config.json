@@ -389,6 +389,12 @@
                     "title": "Overlay Opacity",
                     "minimum": 0,
                     "maximum": 100
+                  },
+                  "margin_top_next_block": {
+                    "type": "integer",
+                    "title": "Push down content",
+                    "minimum": 0,
+                    "maximum": 200
                   }
                 }
               },
@@ -1509,7 +1515,8 @@
             "border_bottom_color": "transparent",
             "show_overlay": false,
             "overlay_bg_color": "#000000",
-            "overlay_opacity": 20
+            "overlay_opacity": 20,
+            "margin_top_next_block": 0
           },
           "logo": {
             "text_color": "#fed136",

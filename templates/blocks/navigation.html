@@ -48,6 +48,7 @@
     background-color: #222222;
     border-color: transparent;
     margin-bottom: 0;
+    top: 0;
   }
   .navbar-custom .container {
     position: relative;
@@ -155,6 +156,10 @@
       background-color: {% if block.style.navbar.transparent %} transparent {% else %} {{ block.style.navbar.bg_color }} {% endif %};
       padding-top: {{ block.style.navbar.padding_top }}px;
       padding-bottom: {{ block.style.navbar.padding_bottom }}px;
+    }
+    /* Margin top next block */
+    .navbar-custom + .block {
+      margin-top: {{ block.style.navbar.margin_top_next_block }}px;
     }
   } 
   .navbar-custom.affix {
