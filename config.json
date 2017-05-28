@@ -392,9 +392,9 @@
                   },
                   "body_padding_top": {
                     "type": "integer",
-                    "title": "Body padding pop",
+                    "title": "Body padding top",
                     "minimum": 0,
-                    "maximum": 100
+                    "maximum": 200
                   }
                 }
               },
