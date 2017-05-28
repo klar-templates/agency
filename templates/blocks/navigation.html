@@ -158,11 +158,8 @@
       padding-bottom: {{ block.style.navbar.padding_bottom }}px;
     }
     /* Margin top next block */
-    .navbar-custom + * {
-      margin-top: {{ block.style.navbar.margin_top_next_block }}px;
-    }
-    /* For editor */
-    [data-template-id="navigation"] + .klar-block {
+    .navbar-custom + *,
+    [data-id="{{ block_id }}"] + * {
       margin-top: {{ block.style.navbar.margin_top_next_block }}px;
     }
   } 
