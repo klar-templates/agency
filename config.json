@@ -389,6 +389,12 @@
                     "title": "Overlay Opacity",
                     "minimum": 0,
                     "maximum": 100
+                  },
+                  "body_padding_top": {
+                    "type": "integer",
+                    "title": "Body padding pop",
+                    "minimum": 0,
+                    "maximum": 100
                   }
                 }
               },
@@ -1509,7 +1515,8 @@
             "border_bottom_color": "transparent",
             "show_overlay": false,
             "overlay_bg_color": "#000000",
-            "overlay_opacity": 20
+            "overlay_opacity": 20,
+            "body_padding_top": 0
           },
           "logo": {
             "text_color": "#fed136",

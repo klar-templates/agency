@@ -142,6 +142,11 @@
 
 <!-- Style CSS -->
 <style>
+  /* Body padding top */
+  body {
+    padding-top: {{ block.style.navbar.body_padding_top }}px;
+  }
+  
   /* Block */
   .navbar-custom {
     background-color: {{ block.style.navbar.bg_color }};
