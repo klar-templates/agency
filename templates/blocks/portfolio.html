@@ -30,12 +30,11 @@
             </a>
             <div class="portfolio-caption">
               <h4
-                data-field-string="heading"
+                data-field-string="items[{{loop.index0}}].heading"
               >{{ item.client }}</h4>
               <p
-                data-field-string="category"
+                data-field-string="items[{{loop.index0}}].category"
                 data-toolbar-buttons="['bold']"
-                class="text-muted"
               >{{ item.category }}</p>
             </div>
           </div>
