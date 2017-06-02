@@ -1519,9 +1519,9 @@
             "margin_top_next_block": 0
           },
           "logo": {
-            "text_color": "#fed136",
-            "text_hover_color": "#fed136",
-            "text_focus_color": "#fed136",
+            "text_color": "{{theme.colors.primary_color}}",
+            "text_hover_color": "{{theme.colors.primary_color}}",
+            "text_focus_color": "{{theme.colors.primary_color}}",
             "font_family": "Kaushan Script",
             "image": "https://assets.brandfolder.com/8w7lv8ml/view.png",
             "padding_top": 12,
@@ -1530,16 +1530,16 @@
           },
           "navigation": {
             "text_color": "#fff",
-            "text_hover_color": "#fed136",
-            "text_active_color": "#fed136",
-            "text_focus_color": "#fed136",
+            "text_hover_color": "{{theme.colors.primary_color}}",
+            "text_active_color": "{{theme.colors.primary_color}}",
+            "text_focus_color": "{{theme.colors.primary_color}}",
             "bg_text_color": "transparent",
             "bg_text_hover_color": "transparent",
-            "bg_text_active_color": "#fed136",
-            "bg_text_focus_color": "#fed136",
-            "mobile_menu_button_bg_color": "#fed136",
-            "mobile_menu_button_hover_bg_color": "#fed136",
-            "mobile_menu_button_focus_bg_color": "#fed136"
+            "bg_text_active_color": "{{theme.colors.primary_color}}",
+            "bg_text_focus_color": "{{theme.colors.primary_color}}",
+            "mobile_menu_button_bg_color": "{{theme.colors.primary_color}}",
+            "mobile_menu_button_hover_bg_color": "{{theme.colors.primary_color}}",
+            "mobile_menu_button_focus_bg_color": "{{theme.colors.primary_color}}"
           }
         }
       },
