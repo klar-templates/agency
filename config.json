@@ -1555,7 +1555,7 @@
         "style": {
           "title_text_color": "#ffffff",
           "subtitle_text_color": "#ffffff",
-          "button_bg_color": "#fed136",
+          "button_bg_color": "{{theme.colors.primary_color}}",
           "button_text_color": "#ffffff",
           "padding_top": 300,
           "padding_bottom": 200,
