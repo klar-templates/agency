@@ -818,7 +818,7 @@
                   "type": "string",
                   "title": "Bild",
                   "format": "file",
-                  "default": "https://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/roundicons.png"
+                  "default": "https://raw.githubusercontent.com/klar-templates/agency/master/img/portfolio/roundicons.png"
                 },
                 "category": {
                   "type": "string",
