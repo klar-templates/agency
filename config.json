@@ -965,7 +965,7 @@
                   "type": "string",
                   "title": "Bild",
                   "format": "file",
-                  "default": "https://blackrockdigital.github.io/startbootstrap-agency/img/about/1.jpg"
+                  "default": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/1.jpg"
                 },
                 "title": {
                   "type": "string",
@@ -1074,7 +1074,7 @@
                   "type": "string",
                   "title": "Bild",
                   "format": "file",
-                  "default": "https://blackrockdigital.github.io/startbootstrap-agency/img/team/3.jpg"
+                  "default": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg"
                 },
                 "heading": {
                   "type": "string",
@@ -1185,7 +1185,7 @@
                   "type": "string",
                   "title": "Logo",
                   "format": "file",
-                  "default": "https://blackrockdigital.github.io/startbootstrap-agency/img/logos/envato.jpg"
+                  "default": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/envato.jpg"
                 },
                 "url": {
                   "type": "string",
@@ -1548,7 +1548,7 @@
         "subtitle": "Welcome To Our Studio!",
         "link": "#services",
         "link_text": "Tell me more",
-        "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg",
+        "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/header-bg.jpg",
         "show_title": true,
         "show_subtitle": true,
         "show_button": true,
@@ -1668,25 +1668,25 @@
         "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
         "items": [
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/about/1.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/1.jpg",
             "title": "2009-2011",
             "subtitle": "Our Humble Beginnings",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           },
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/about/2.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/2.jpg",
             "title": "March 2011",
             "subtitle": "An Agency is Born",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           },
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/about/3.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/3.jpg",
             "title": "December 2012",
             "subtitle": "Transition to Full Service",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           },
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/about/4.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/4.jpg",
             "title": "July 2014",
             "subtitle": "Phase Two Expansion",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
@@ -1707,7 +1707,7 @@
         "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
         "team": [
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/team/1.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/1.jpg",
             "heading": "Kay Garland",
             "text": "Lead Designer",
             "social_links": [
@@ -1729,7 +1729,7 @@
             ]
           },
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/team/2.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/2.jpg",
             "heading": "Larry Parker",
             "text": "Lead Marketer",
             "social_links": [
@@ -1751,7 +1751,7 @@
             ]
           },
           {
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/team/3.jpg",
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg",
             "heading": "Diana Pertersen",
             "text": "Lead Developer",
             "social_links": [
@@ -1782,22 +1782,22 @@
         "items": [
           {
             "title": "Envato",
-            "logo": "https://blackrockdigital.github.io/startbootstrap-agency/img/logos/envato.jpg",
+            "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/envato.jpg",
             "url": "#"
           },
           {
             "title": "Designmodo",
-            "logo": "https://blackrockdigital.github.io/startbootstrap-agency/img/logos/designmodo.jpg",
+            "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/designmodo.jpg",
             "url": "#"
           },
           {
             "title": "ThemeForest",
-            "logo": "https://blackrockdigital.github.io/startbootstrap-agency/img/logos/themeforest.jpg",
+            "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/themeforest.jpg",
             "url": "#"
           },
           {
             "title": "Creative Market",
-            "logo": "https://blackrockdigital.github.io/startbootstrap-agency/img/logos/creative-market.jpg",
+            "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/creative-market.jpg",
             "url": "#"
           }
         ],
@@ -1820,7 +1820,7 @@
             "padding_top": "{{theme.block.padding_top}}",
             "padding_bottom": "{{theme.block.padding_bottom}}",
             "show_image": true,
-            "image": "https://blackrockdigital.github.io/startbootstrap-agency/img/map-image.png"
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/map-image.png"
           },
           "base": {
             "title_text_color": "#ffffff",
