@@ -1156,7 +1156,7 @@
                     "$ref": "#/definitions/block_padding_top"
                   },
                   "padding_bottom": {
-                    "$ref": "#/definitions/block_padding_top"
+                    "$ref": "#/definitions/block_padding_bottom"
                   }
                 }
               }
