@@ -70,14 +70,14 @@
           "format": "color",
           "default": "#fed136"
         },
-        "block_padding_top": {
+        "padding_top": {
           "type": "integer",
           "title": "Padding top",
           "minimum": 0,
           "maximum": 150,
           "default": 150
         },
-        "block_padding_bottom": {
+        "padding_bottom": {
           "type": "integer",
           "title": "Padding bottom",
           "minimum": 0,
