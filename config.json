@@ -825,7 +825,7 @@
                   
                 }
               },
-              "Block base": {
+              "block_base": {
                 "$ref": "#/definitions/base"
               },
               "base": {
