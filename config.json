@@ -1302,6 +1302,12 @@
                   },
                   "subtitle_text_color": {
                     "$ref": "#/definitions/subtitle_text_color"
+                  },
+                  "selection_text_color": {
+                    "$ref": "#/definitions/selection_text_color"
+                  },
+                  "selection_bg_color": {
+                    "$ref": "#/definitions/selection_bg_color"
                   }
                 }
               }
