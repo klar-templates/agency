@@ -812,21 +812,21 @@
                     "type": "string",
                     "title": "Ikon - färg",
                     "format": "color",
-                    "default": "transparent",
+                    "default": "#ffffff",
                     "ui:css_selector": "${block_id_css_id} .fa-inverse",
-                    "ui:css_property": "color",
-                    "default": "#ffffff"
+                    "ui:css_property": "color"
                   },
                   "padding_top": {
                     "$ref": "#/definitions/block_padding_top"
                   },
                   "padding_bottom": {
                     "$ref": "#/definitions/block_padding_bottom"
-                  },
-                  "Base": {
-                    "$ref": "#/definitions/base"
                   }
+                  
                 }
+              },
+              "Block base": {
+                "$ref": "#/definitions/base"
               },
               "base": {
                 "title": "Base",
