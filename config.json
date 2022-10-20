@@ -827,36 +827,6 @@
               },
               "base": {
                 "$ref": "#/definitions/base"
-              },
-              "base_obsolete": {
-                "title": "Base",
-                "type": "object",
-                "properties": {
-                  "title_text_color": {
-                    "$ref": "#/definitions/title_text_color"
-                  },
-                  "subtitle_text_color": {
-                    "$ref": "#/definitions/subtitle_text_color"
-                  },
-                  "text_color": {
-                    "$ref": "#/definitions/text_color"
-                  },
-                  "link_text_color": {
-                    "$ref": "#/definitions/link_text_color"
-                  },
-                  "link_hover_text_color": {
-                    "$ref": "#/definitions/link_hover_text_color"
-                  },
-                  "primary_color": {
-                    "$ref": "#/definitions/primary_color"
-                  },
-                  "selection_text_color": {
-                    "$ref": "#/definitions/selection_text_color"
-                  },
-                  "selection_bg_color": {
-                    "$ref": "#/definitions/selection_bg_color"
-                  }
-                }
               }
             }
           }
