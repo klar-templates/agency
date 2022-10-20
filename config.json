@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "definitions": {
     "base": {
-      "title": "Base",
+      "title": "Block base",
       "type": "object",
       "properties": {
         "bg_color": {
