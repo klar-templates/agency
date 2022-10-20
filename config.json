@@ -1777,7 +1777,9 @@
         ],
         "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
         "style": {
-          
+          "block": {
+            "social_links_hover_bg_color": "{{theme.colors.primary_color}}"            
+          }
         }
       },
       "clients": {
