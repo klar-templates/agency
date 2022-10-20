@@ -1261,6 +1261,13 @@
                     "ui:css_selector": "#contact",
                     "$ref": "#/definitions/bg_color"
                   },
+                  "button_bg_color": {
+                    "type": "string",
+                    "title": "Button bg color",
+                    "format": "color",
+                    "no-ui:css_selector": "${block_id_css_id} .btn-xl",
+                    "no-ui:css_property": "background-color"
+                  },
                   "button_text_color": {
                     "type": "string",
                     "title": "Button text color",
@@ -1298,21 +1305,6 @@
                   },
                   "text_color": {
                     "$ref": "#/definitions/text_color"
-                  },
-                  "link_text_color": {
-                    "$ref": "#/definitions/link_text_color"
-                  },
-                  "link_hover_text_color": {
-                    "$ref": "#/definitions/link_hover_text_color"
-                  },
-                  "primary_color": {
-                    "$ref": "#/definitions/primary_color"
-                  },
-                  "selection_text_color": {
-                    "$ref": "#/definitions/selection_text_color"
-                  },
-                  "selection_bg_color": {
-                    "$ref": "#/definitions/selection_bg_color"
                   }
                 }
               }
@@ -1824,6 +1816,7 @@
         "style": {
           "block": {
             "bg_color": "#222222",
+            "button_bg_color": "{{theme.colors.primary_color}}",
             "button_text_color": "#ffffff",
             "padding_top": "{{theme.block.padding_top}}",
             "padding_bottom": "{{theme.block.padding_bottom}}",
