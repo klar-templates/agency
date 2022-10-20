@@ -6,29 +6,83 @@
       "title": "Base",
       "type": "object",
       "properties": {
+        "bg_color": {
+          "type": "string",
+          "title": "Bakgrundsfärg",
+          "format": "color",
+          "ui:css_selector": "body",
+          "ui:css_property": "background-color",
+          "default": "#ffffff"
+        },
         "title_text_color": {
-          "$ref": "#/definitions/title_text_color"
+          "type": "string",
+          "title": "Rubrikfärg",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id} .section-heading, ${block_id_css_id} h1, ${block_id_css_id} h2, ${block_id_css_id} 3, ${block_id_css_id} h4, ${block_id_css_id} h5, ${block_id_css_id} h6",
+          "ui:css_property": "color",
+          "default": "#333333"
         },
         "subtitle_text_color": {
-          "$ref": "#/definitions/subtitle_text_color"
+          "type": "string",
+          "title": "Underrubrikfärg",
+          "format": "color",
+          "ui:css_selector": "body ${block_id_css_id} h3.section-subheading",
+          "ui:css_property": "color",
+          "default": "#777777"
         },
         "text_color": {
-          "$ref": "#/definitions/text_color"
+          "type": "string",
+          "title": "Textfärg",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id} p",
+          "ui:css_property": "color",
+          "default": "#777777"
         },
         "link_text_color": {
-          "$ref": "#/definitions/link_text_color"
+          "type": "string",
+          "title": "Länk textfärg",
+          "format": "color",
+          "default": "#fed136"
         },
         "link_hover_text_color": {
-          "$ref": "#/definitions/link_hover_text_color"
+          "type": "string",
+          "title": "Länk textfärg hover",
+          "format": "color",
+          "default": "#fed136"
         },
         "primary_color": {
-          "$ref": "#/definitions/primary_color"
+          "type": "string",
+          "title": "Primary color",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id} .btn-primary, ${block_id_css_id} .text-primary",
+          "ui:css_property": "color",
+          "default": "#fed136"
         },
         "selection_text_color": {
-          "$ref": "#/definitions/selection_text_color"
+          "type": "string",
+          "title": "Text selection color",
+          "format": "color",
+          "default": "#ffffff"
         },
         "selection_bg_color": {
-          "$ref": "#/definitions/selection_bg_color"
+          "type": "string",
+          "title": "Text selection bg color",
+          "format": "color",
+          "default": "#fed136"
+        },
+        "block_padding_top": {
+          "type": "integer",
+          "title": "Padding top",
+          "minimum": 0,
+          "maximum": 150,
+          "default": 150
+        },
+        "block_padding_bottom": {
+          "type": "integer",
+          "title": "Padding bottom",
+          "minimum": 0,
+          "maximum": 150,
+          "default": 150
         }
       }
     },
