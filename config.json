@@ -1261,6 +1261,13 @@
                     "ui:css_selector": "#contact",
                     "$ref": "#/definitions/bg_color"
                   },
+                  "button_text_color": {
+                    "type": "string",
+                    "title": "Button text color",
+                    "format": "color",
+                    "no-ui:css_selector": "${block_id_css_id} .btn-xl",
+                    "no-ui:css_property": "color"
+                  },
                   "padding_top": {
                     "$ref": "#/definitions/block_padding_top"
                   },
@@ -1817,6 +1824,7 @@
         "style": {
           "block": {
             "bg_color": "#222222",
+            "button_text_color": "#ffffff",
             "padding_top": "{{theme.block.padding_top}}",
             "padding_bottom": "{{theme.block.padding_bottom}}",
             "show_image": true,

@@ -135,38 +135,24 @@
 #contact .form-control:focus {
   border-color: {{ block.style.base.primary_color }};
 }
+#{{block_id}} .btn-xl,
+#{{block_id}} .btn-xl:hover,
+#{{block_id}} .btn-xl:focus,
+#{{block_id}} .btn-xl:active {
+  background-color: {{ block.style.base.primary_color }};
+  border-color: {{ block.style.base.primary_color }};
+  color: {{ block.style.button_text_color }};
+}
 
 /* Base */
-#contact h1, #contact h2, #contact h3, #contact h4, #contact h5, #contact h6 {
+#contact .section-heading {
   color: {{ block.style.base.title_text_color }};
 }
-#contact h3.section-subheading {
+#contact .section-subheading {
   color: {{ block.style.base.subtitle_text_color }};
 }
 #contact p {
   color: {{ block.style.base.text_color }};
-}
-#contact a {
-  color: {{ block.style.base.link_text_color }};
-}
-#contact a:hover,
-#contact a:focus,
-#contact a:active {
-  color: {{ block.style.base.link_hover_text_color }};
-}
-#contact .btn-primary,
-#contact .btn-primary:hover,
-#contact .btn-primary:focus,
-#contact .btn-primary:active {
-  background-color: {{ block.style.base.primary_color }};
-  border-color: {{ block.style.base.primary_color }};
-}
-#contact .text-primary {
-  color: {{ block.style.base.primary_text_color }};
-}
-#contact ::selection {
-  color: {{ block.style.base.selection_text_color }};
-  background: {{ block.style.base.selection_bg_color }};
 }
 </style>
 
