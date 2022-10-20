@@ -825,10 +825,10 @@
                   
                 }
               },
-              "block_base": {
+              "base": {
                 "$ref": "#/definitions/base"
               },
-              "base": {
+              "base_obsolete": {
                 "title": "Base",
                 "type": "object",
                 "properties": {
