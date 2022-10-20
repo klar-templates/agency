@@ -822,7 +822,6 @@
                   "padding_bottom": {
                     "$ref": "#/definitions/block_padding_bottom"
                   }
-                  
                 }
               },
               "base": {
