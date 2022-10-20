@@ -192,11 +192,6 @@
       "title": "Footer",
       "id": "footer",
       "icon": "address-card-o"
-    },
-    {
-      "title": "Decoration",
-      "id": "decoration",
-      "icon": "image"
     }
   ],
   "settings_schema": {
