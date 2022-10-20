@@ -10,7 +10,7 @@
           "type": "string",
           "title": "Bakgrundsfärg",
           "format": "color",
-          "ui:css_selector": "body",
+          "ui:css_selector": "${block_id_css_id}",
           "ui:css_property": "background-color",
           "default": "#ffffff"
         },
