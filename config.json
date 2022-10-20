@@ -822,6 +822,9 @@
                   },
                   "padding_bottom": {
                     "$ref": "#/definitions/block_padding_bottom"
+                  },
+                  "Base": {
+                    "$ref": "#/definitions/base"
                   }
                 }
               },
@@ -829,9 +832,6 @@
                 "title": "Base",
                 "type": "object",
                 "properties": {
-                  "Base": {
-                    "$ref": "#/definitions/base"
-                  },
                   "title_text_color": {
                     "$ref": "#/definitions/title_text_color"
                   },
