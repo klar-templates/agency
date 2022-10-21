@@ -13,7 +13,14 @@
           data-field-string-format-uri="items[{{loop.index0}}].url"
           data-placement="bottom"
         >
-        	<img src="{{ client.logo }}" class="img-responsive img-centered" alt="">
+        	<img
+            src="{{ client.logo }}"
+            class="img-responsive img-centered"
+            data-field-string-file="items[{{loop.index0}}].logo"
+            no-data-placement="top"
+            no-data-inset="true"
+            alt="{{ item.title }}"
+          />      
         </a>
       </div>
       {% endfor %}
