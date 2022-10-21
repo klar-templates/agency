@@ -4,7 +4,15 @@
     <div class="row">
       {% for client in block.items %}
       <div class="col-md-3 col-sm-6">
-        <a href="{{ client.url }}">
+        <a
+          href="{{ client.url }}"
+          {% if item.open_in_new_page %}
+            target="_blank"
+          {% endif %}
+          data-field-string="items[{{loop.index0}}].url"
+          data-field-string-format-uri="items[{{loop.index0}}].link"
+          data-placement="bottom"
+        >
         	<img src="{{ client.logo }}" class="img-responsive img-centered" alt="">
         </a>
       </div>
