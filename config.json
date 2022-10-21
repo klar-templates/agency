@@ -1225,8 +1225,7 @@
                 "url": {
                   "type": "string",
                   "title": "URL",
-                  "format": "uri",
-                  "default": "#"
+                  "format": "uri"
                 }
               }
             }
