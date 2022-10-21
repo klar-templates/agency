@@ -9,15 +9,13 @@
           {% if item.open_in_new_page %}
             target="_blank"
           {% endif %}
-          data-field-string-file="items[{{loop.index0}}].logo"
           data-field-string-format-uri="items[{{loop.index0}}].url"
+          data-field-string-file="items[{{loop.index0}}].logo"
           data-placement="bottom"
         >
         	<img
             src="{{ client.logo }}"
             class="img-responsive img-centered"
-            ata-placement="top"
-            ata-inset="true"
             alt="{{ item.title }}"
           />      
         </a>
