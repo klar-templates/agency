@@ -1822,22 +1822,22 @@
           {
             "title": "Envato",
             "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/envato.jpg",
-            "url": "#"
+            "url": "#clients"
           },
           {
             "title": "Designmodo",
             "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/designmodo.jpg",
-            "url": "#"
+            "url": "#clients"
           },
           {
             "title": "ThemeForest",
             "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/themeforest.jpg",
-            "url": "#"
+            "url": "#clients"
           },
           {
             "title": "Creative Market",
             "logo": "https://raw.githubusercontent.com/klar-templates/agency/master/img/logos/creative-market.jpg",
-            "url": "#"
+            "url": "#clients"
           }
         ],
         "style": {
