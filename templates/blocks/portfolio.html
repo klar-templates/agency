@@ -17,7 +17,7 @@
       {% for item in block.items %}
         <div class="col-md-4 col-sm-6 portfolio-item">
           <div data-field-array-item>
-            <a href="#{{block_id}}-modal-{{loop.index}}" class="portfolio-link" data-toggle="modal" onclick="getElementById('{{block_id}}-modal-{{loop.index}}').classList.add('klar-modal-open')">
+            <a href="#{{block_id}}-modal-{{loop.index}}" class="portfolio-link" data-toggle="modal" nclick="getElementById('{{block_id}}-modal-{{loop.index}}').classList.add('klar-modal-open')">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -50,7 +50,7 @@
   <div class="{{block_id}}-modal portfolio-modal modal fade" id="{{block_id}}-modal-{{loop.index}}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content" style="text-align: left">
-        <div class="close-modal" data-dismiss="modal" onclick="getElementById('{{block_id}}-modal-{{loop.index}}').classList.remove('klar-modal-open')">
+        <div class="close-modal" data-dismiss="modal" nclick="getElementById('{{block_id}}-modal-{{loop.index}}').classList.remove('klar-modal-open')">
           <div class="lr">
               <div class="rl">
               </div>
