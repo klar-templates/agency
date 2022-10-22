@@ -24,8 +24,9 @@
                 </div>
               </div>
               <img
-                src="{{ item.image }}"
                 class="img-responsive"
+                data-field-string-file="items[{{loop.index0}}].image"
+                src="{{ item.image }}"
                 alt="" />
             </a>
             <div class="portfolio-caption">
@@ -80,7 +81,7 @@
               <div class="col-md-4 col-lg-6">
                 <img
                   class="img-responsive mg-centered"
-                  data-field-string-file="items[{{loop.index0}}].image"
+                  ata-field-string-file="items[{{loop.index0}}].image"
                   src="{{ item.image }}"
                   alt="" />
               </div>
