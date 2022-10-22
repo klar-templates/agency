@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "definitions": {
     "colors": {
-      "title": "Colors",
+      "title": "Färger",
       "type": "object",
       "properties": {
         "bg_color": {
@@ -323,7 +323,7 @@
           }
         },
         "typography": {
-          "title": "Typography",
+          "title": "Typografi",
           "type": "object",
           "no_ui:css_selector": "body",
           "properties": {
