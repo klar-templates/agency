@@ -311,6 +311,18 @@
         top: 100
       }
     });
+
+    // Add klar-modal-open class when modal is opened
+    $('.modal').on('show.bs.modal', function (event) {
+      console.log('add klar-open')
+      var modal = this;
+      modal.classList.add('klar-modal-open');
+    });
+    $('.modal').on('hide.bs.modal', function (event) {
+      console.log('remove klar-open')
+      var modal = this;
+      modal.classList.remove('klar-modal-open');
+    });
     
   })(jQuery);
 </script>
