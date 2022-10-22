@@ -18,14 +18,13 @@
         <div class="col-md-4 col-sm-6 portfolio-item">
           <div data-field-array-item>
             <a href="#{{block_id}}-modal-{{loop.index}}" class="portfolio-link" data-toggle="modal" nclick="getElementById('{{block_id}}-modal-{{loop.index}}').classList.add('klar-modal-open')">
-              <div class="portfolio-hover">
+              <div class="portfolio-hover" data-field-string-file="items[{{loop.index0}}].image">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
               <img
                 class="img-responsive"
-                data-field-string-file="items[{{loop.index0}}].image"
                 src="{{ item.image }}"
                 alt="" />
             </a>
