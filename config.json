@@ -2,8 +2,8 @@
   "name": "agency",
   "version": "0.0.0",
   "definitions": {
-    "base": {
-      "title": "Base",
+    "colors": {
+      "title": "Colors",
       "type": "object",
       "properties": {
         "bg_color": {
@@ -69,7 +69,13 @@
           "title": "Text selection bg color",
           "format": "color",
           "default": "#fed136"
-        },
+        }
+      }
+    },
+    "layout": {
+      "title": "Layout",
+      "type": "object",
+      "properties": {
         "padding_top": {
           "type": "integer",
           "title": "Padding top",
@@ -808,8 +814,11 @@
                   }
                 }
               },
-              "base": {
+              "colors": {
                 "$ref": "#/definitions/base"
+              },
+              "layout": {
+                "$ref": "#/definitions/layout"
               }
             }
           }
