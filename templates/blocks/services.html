@@ -52,44 +52,45 @@
 #{{block_id}} .text-primary { color: {{ block.style.block.icon_bg_color }}; }
 #{{block_id}} .fa-inverse { color: {{ block.style.block.icon_color }}; }
 
-/* Base */
+/* Colors */
 #{{block_id}} {
-  background-color: {{ block.style.base.bg_color }};
-  color: {{ block.style.base.text_color }};
+  background-color: {{ block.style.colors.bg_color }};
+  color: {{ block.style.colors.text_color }};
 }
 #{{block_id}} h1, #{{block_id}} h2, #{{block_id}} h3, #{{block_id}} h4, #{{block_id}} h5, #{{block_id}} h6 {
-  color: {{ block.style.base.title_text_color }};
+  color: {{ block.style.colors.title_text_color }};
 }
 #{{block_id}} h3.section-subheading {
-  color: {{ block.style.base.subtitle_text_color }};
+  color: {{ block.style.colors.subtitle_text_color }};
 }
 #{{block_id}} p {
-  color: {{ block.style.base.text_color }};
+  color: {{ block.style.colors.text_color }};
 }
 #{{block_id}} a {
-  color: {{ block.style.base.link_text_color }};
+  color: {{ block.style.colors.link_text_color }};
 }
 #{{block_id}} a:hover,
 #{{block_id}} a:focus,
 #{{block_id}} a:active {
-  color: {{ block.style.base.link_hover_text_color }};
+  color: {{ block.style.colors.link_hover_text_color }};
 }
 #{{block_id}} .btn-primary,
 #{{block_id}} .btn-primary:hover,
 #{{block_id}} .btn-primary:focus,
 #{{block_id}} .btn-primary:active {
-  background-color: {{ block.style.base.primary_color }};
-  border-color: {{ block.style.base.primary_color }};
+  background-color: {{ block.style.colors.primary_color }};
+  border-color: {{ block.style.colors.primary_color }};
 }
 #{{block_id}} .text-primary {
-  color: {{ block.style.base.primary_color }};
+  color: {{ block.style.colors.primary_color }};
 }
 #{{block_id}} ::selection {
-  color: {{ block.style.base.selection_text_color }};
-  background: {{ block.style.base.selection_bg_color }};
+  color: {{ block.style.colors.selection_text_color }};
+  background: {{ block.style.colors.selection_bg_color }};
 }
+/* Colors */
 #{{block_id}} {
-  padding-top: {{ block.style.base.padding_top }}px;
-  padding-bottom: {{ block.style.base.padding_bottom }}px;
+  padding-top: {{ block.style.layout.padding_top }}px;
+  padding-bottom: {{ block.style.layout.padding_bottom }}px;
 }
 </style>
