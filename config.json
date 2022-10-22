@@ -815,7 +815,7 @@
                 }
               },
               "colors": {
-                "$ref": "#/definitions/base"
+                "$ref": "#/definitions/colors"
               },
               "layout": {
                 "$ref": "#/definitions/layout"
