@@ -838,7 +838,6 @@
           "items": {
             "type": "array",
             "title": "Portfolio",
-            "limit": 3,
             "items": {
               "type": "object",
               "title": "Portfolio item",
