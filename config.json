@@ -287,7 +287,7 @@
   "page_types": [
     {
       "title": "Startsida",
-      "id": "index"
+      "id": "startpage"
     }
   ],
   "settings_schema": {
