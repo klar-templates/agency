@@ -288,6 +288,10 @@
     {
       "title": "Startsida",
       "id": "index"
+    },
+    {
+      "title": "Undersida",
+      "id": "sub-page"
     }
   ],
   "settings_schema": {
