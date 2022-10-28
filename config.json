@@ -287,7 +287,11 @@
   "page_types": [
     {
       "title": "Startsida",
-      "id": "startpage"
+      "id": "index"
+    },
+    {
+      "title": "Undersida",
+      "id": "sub-page"
     }
   ],
   "settings_schema": {
