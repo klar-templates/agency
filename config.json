@@ -284,6 +284,12 @@
       "icon": "address-card-o"
     }
   ],
+  "page_types": [
+    {
+      "title": "Startsida",
+      "id": "startsida"
+    }
+  ],
   "settings_schema": {
     "theme": {
       "title": "Tema",
