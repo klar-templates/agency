@@ -294,6 +294,10 @@
       "id": "blogg"
     },
     {
+      "title": "Kontaktsida",
+      "id": "contact-page"
+    },
+    {
       "title": "Startsida",
       "id": "index"
     }
