@@ -286,12 +286,16 @@
   ],
   "page_types": [
     {
-      "title": "Startsida",
-      "id": "index"
-    },
-    {
       "title": "Undersida",
       "id": "sub-page"
+    },
+    {
+      "title": "Blogg",
+      "id": "blogg"
+    },
+    {
+      "title": "Startsida",
+      "id": "index"
     }
   ],
   "settings_schema": {
