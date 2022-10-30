@@ -1,3 +1,4 @@
+</script type="text/jsx">
 function KlarBlock({heading, subHeading, image, team, text}) {
   return (
     <Block>
@@ -7,7 +8,6 @@ function KlarBlock({heading, subHeading, image, team, text}) {
     </Block>
   );
 }
-
 function Block({children}) {
   return (
     <div className="container">
@@ -15,7 +15,6 @@ function Block({children}) {
     </div>
   );
 }
-
 function Intro({heading, subHeading}) {
   return (
     <div className="row">
@@ -26,7 +25,6 @@ function Intro({heading, subHeading}) {
     </div>
   );
 }
-
 function Members({team}) {
   return (
     <div className="row clearfix" data-field-array="team">
@@ -42,7 +40,6 @@ function Members({team}) {
     </div>
   );
 }
-
 function TeamMember({name, position, image, socialLinks}) {
   return (
     <div className="col-sm-4">
@@ -66,7 +63,6 @@ function TeamMember({name, position, image, socialLinks}) {
     </div>
   );
 }
-
 function Description({text}) {
   return (
     <div className="row">
@@ -76,3 +72,110 @@ function Description({text}) {
     </div>
   );
 }
+const data = {
+    "heading": "Our Amazing Team",
+    "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
+    "team": [
+        {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/1.jpg",
+            "heading": "Kay Garland",
+            "text": "Lead Designer",
+            "social_links": [
+                {
+                    "title": "Twitter",
+                    "icon": "twitter",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link": "#youraccount"
+                }
+            ]
+        },
+        {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/2.jpg",
+            "heading": "Larry Parker",
+            "text": "Lead Marketer",
+            "social_links": [
+                {
+                    "title": "Twitter",
+                    "icon": "twitter",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link": "#youraccount"
+                }
+            ]
+        },
+        {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg",
+            "heading": "Diana Pertersen",
+            "text": "Lead Developer",
+            "social_links": [
+                {
+                    "title": "Twitter",
+                    "icon": "twitter",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link": "#youraccount"
+                }
+            ]
+        }
+    ],
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
+    "style": {
+        "block": {
+            "bg_color": "#eeeeee",
+            "padding_top": 150,
+            "padding_bottom": 150
+        }
+    },
+    "block_id": "team-1495374874481",
+    "template_id": "team",
+    "theme": {
+        "colors": {
+            "bg_color": "#ffffff",
+            "title_text_color": "#333333",
+            "subtitle_text_color": "#777777",
+            "text_color": "#777777",
+            "link_color": "#fed136",
+            "link_hover_color": "#fec503",
+            "primary_color": "#fed136",
+            "selection_text_color": "#ffffff",
+            "selection_bg_color": "#fed136"
+        },
+        "typography": {
+            "title_font_family": "Montserrat",
+            "subtitle_font_family": "Droid Serif",
+            "text_font_family": "Roboto Slab",
+            "type_base_size": 14
+        },
+        "block": {
+            "padding_top": "150",
+            "padding_bottom": "150"
+        }
+    }
+};
+ReactDOM.render(<KlarBlock {...data} />, document.querySelector(".footer"));
+<script>
