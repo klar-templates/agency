@@ -1,0 +1,181 @@
+<script>
+function KlarBlock({ heading, subHeading, image, team, text }) {
+  return /*#__PURE__*/(
+    React.createElement(Block, null, /*#__PURE__*/
+    React.createElement(Intro, { heading: heading, subHeading: subHeading }), /*#__PURE__*/
+    React.createElement(Members, { team: team, foo: "dfsadf" }), /*#__PURE__*/
+    React.createElement(Description, { text: text })));
+
+
+}
+function Block({ children }) {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "container" },
+    children));
+
+
+}
+function Intro({ heading, subHeading }) {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "row" }, /*#__PURE__*/
+    React.createElement("div", { className: "col-lg-12 text-center" }, /*#__PURE__*/
+    React.createElement("h2", { className: "section-heading" }, heading), /*#__PURE__*/
+    React.createElement("h3", { className: "section-subheading text-muted" }, subHeading))));
+
+
+
+}
+function Members({ team }) {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "row clearfix", "data-field-array": "team" },
+    team.map((member, i) => {
+      return /*#__PURE__*/React.createElement(TeamMember, {
+        image: member.image,
+        name: member.heading,
+        position: member.text,
+        key: i });
+
+    })));
+
+
+
+}
+function TeamMember({ name, position, image, socialLinks }) {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "col-sm-4" }, /*#__PURE__*/
+    React.createElement("div", { className: "team-member", "data-field-array-item": "" }, /*#__PURE__*/
+    React.createElement("img", { src: image, className: "img-responsive img-circle", "no-data-placement": "top", "no-data-inset": "true", alt: name }), /*#__PURE__*/
+    React.createElement("h4", null, name), /*#__PURE__*/
+    React.createElement("p", null, position), /*#__PURE__*/
+    React.createElement("ul", { className: "list-inline social-buttons" }, /*#__PURE__*/
+    React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "#youraccount" }, /*#__PURE__*/React.createElement("i", { className: "fa fa-twitter" }))), /*#__PURE__*/
+
+    React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "#youraccount" }, /*#__PURE__*/React.createElement("i", { className: "fa fa-facebook" }))), /*#__PURE__*/
+
+
+    React.createElement("li", null, /*#__PURE__*/
+    React.createElement("a", { href: "#youraccount" }, /*#__PURE__*/React.createElement("i", { className: "fa fa-instagram" })))))));
+
+
+
+
+
+}
+function Description({ text }) {
+  return /*#__PURE__*/(
+    React.createElement("div", { className: "row" }, /*#__PURE__*/
+    React.createElement("div", { className: "col-lg-8 col-lg-offset-2 text-center" }, /*#__PURE__*/
+    React.createElement("p", { className: "large" }, text))));
+
+
+
+}
+const data = {
+  "heading": "Our Amazing Team",
+  "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
+  "team": [
+  {
+    "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/1.jpg",
+    "heading": "Kay Garland",
+    "text": "Lead Designer",
+    "social_links": [
+    {
+      "title": "Twitter",
+      "icon": "twitter",
+      "link": "#youraccount" },
+
+    {
+      "title": "Facebook",
+      "icon": "facebook",
+      "link": "#youraccount" },
+
+    {
+      "title": "Instagram",
+      "icon": "instagram",
+      "link": "#youraccount" }] },
+
+
+
+  {
+    "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/2.jpg",
+    "heading": "Larry Parker",
+    "text": "Lead Marketer",
+    "social_links": [
+    {
+      "title": "Twitter",
+      "icon": "twitter",
+      "link": "#youraccount" },
+
+    {
+      "title": "Facebook",
+      "icon": "facebook",
+      "link": "#youraccount" },
+
+    {
+      "title": "Instagram",
+      "icon": "instagram",
+      "link": "#youraccount" }] },
+
+
+
+  {
+    "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg",
+    "heading": "Diana Pertersen",
+    "text": "Lead Developer",
+    "social_links": [
+    {
+      "title": "Twitter",
+      "icon": "twitter",
+      "link": "#youraccount" },
+
+    {
+      "title": "Facebook",
+      "icon": "facebook",
+      "link": "#youraccount" },
+
+    {
+      "title": "Instagram",
+      "icon": "instagram",
+      "link": "#youraccount" }] }],
+
+
+
+
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
+  "style": {
+    "block": {
+      "bg_color": "#eeeeee",
+      "padding_top": 150,
+      "padding_bottom": 150 } },
+
+
+  "block_id": "team-1495374874481",
+  "template_id": "team",
+  "theme": {
+    "colors": {
+      "bg_color": "#ffffff",
+      "title_text_color": "#333333",
+      "subtitle_text_color": "#777777",
+      "text_color": "#777777",
+      "link_color": "#fed136",
+      "link_hover_color": "#fec503",
+      "primary_color": "#fed136",
+      "selection_text_color": "#ffffff",
+      "selection_bg_color": "#fed136" },
+
+    "typography": {
+      "title_font_family": "Montserrat",
+      "subtitle_font_family": "Droid Serif",
+      "text_font_family": "Roboto Slab",
+      "type_base_size": 14 },
+
+    "block": {
+      "padding_top": "150",
+      "padding_bottom": "150" } } };
+
+
+
+ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), document.querySelector("#footer"));
+</script>
