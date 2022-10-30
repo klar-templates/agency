@@ -1962,6 +1962,84 @@
           }
         }
       },
+      "team2": {
+        "heading": "Our Amazing Team",
+        "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
+        "team": [
+          {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/1.jpg",
+            "heading": "Kay Garland",
+            "text": "Lead Designer",
+            "social_links": [
+              {
+                "title": "Twitter",
+                "icon": "twitter",
+                "link": "#youraccount"
+              },
+              {
+                "title": "Facebook",
+                "icon": "facebook",
+                "link": "#youraccount"
+              },
+              {
+                "title": "Instagram",
+                "icon": "instagram",
+                "link": "#youraccount"
+              }
+            ]
+          },
+          {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/2.jpg",
+            "heading": "Larry Parker",
+            "text": "Lead Marketer",
+            "social_links": [
+              {
+                "title": "Twitter",
+                "icon": "twitter",
+                "link": "#youraccount"
+              },
+              {
+                "title": "Facebook",
+                "icon": "facebook",
+                "link": "#youraccount"
+              },
+              {
+                "title": "Instagram",
+                "icon": "instagram",
+                "link": "#youraccount"
+              }
+            ]
+          },
+          {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg",
+            "heading": "Diana Pertersen",
+            "text": "Lead Developer",
+            "social_links": [
+              {
+                "title": "Twitter",
+                "icon": "twitter",
+                "link": "#youraccount"
+              },
+              {
+                "title": "Facebook",
+                "icon": "facebook",
+                "link": "#youraccount"
+              },
+              {
+                "title": "Instagram",
+                "icon": "instagram",
+                "link": "#youraccount"
+              }
+            ]
+          }
+        ],
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
+        "style": {
+          "block": {
+            "social_links_hover_bg_color": "{{theme.colors.primary_color}}"            
+          }
+        }
+      },
       "clients": {
         "items": [
           {
