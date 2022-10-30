@@ -284,7 +284,17 @@
 
 <script id="react-code">
   function KlarBlock({heading, subHeading, image, team, text}) {
-    return 'test';
+    return 'test'(
+      <Block />
+    );
+  }
+
+  function Block() {
+    return (
+      <div className="container">
+        
+      </div>
+    );
   }
 </script>
 
