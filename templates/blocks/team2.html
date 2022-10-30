@@ -1,3 +1,4 @@
+<script>
 function KlarBlock({heading, subHeading, image, team, text}) {
   return (
     <Block>
@@ -182,5 +183,6 @@ const data = {
         }
     }
 };
+</script>
 
-// ReactDOM.render(<KlarBlock {...data} />, document.querySelector(".team2"));
+ReactDOM.render(<KlarBlock {...data} />, document.querySelector(".left"));
