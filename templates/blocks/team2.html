@@ -1,0 +1,186 @@
+function KlarBlock({heading, subHeading, image, team, text}) {
+  return (
+    <Block>
+      <Intro heading={heading} subHeading={subHeading} />
+      <Members team={team} foo="dfsadf" />
+      <Description text={text} />
+    </Block>
+  );
+}
+
+function Block({children}) {
+  return (
+    <div className="container">
+      {children}
+    </div>
+  );
+}
+
+function Intro({heading, subHeading}) {
+  return (
+    <div className="row">
+      <div className="col-lg-12 text-center">
+        <h2 className="section-heading">{heading}</h2>
+        <h3 className="section-subheading text-muted">{subHeading}</h3>
+      </div>
+    </div>
+  );
+}
+
+function Members({team}) {
+  return (
+    <div className="row clearfix" data-field-array="team">
+    { team.map((member, i) => {
+      return <TeamMember
+          image={member.image}
+          name={member.heading}
+          position={member.text}
+          key={i}
+      />
+      })
+    }
+    </div>
+  );
+}
+
+function TeamMember({name, position, image, socialLinks}) {
+  return (
+    <div className="col-sm-4">
+      <div className="team-member" data-field-array-item="">
+        <img src={image} className="img-responsive img-circle" no-data-placement="top" no-data-inset="true" alt={name} />
+        <h4>{name}</h4>
+        <p>{position}</p>
+        <ul className="list-inline social-buttons">
+          <li>
+            <a href="#youraccount"><i className="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#youraccount"><i className="fa fa-facebook"></i></a>
+          </li>
+
+          <li>
+            <a href="#youraccount"><i className="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function Description({text}) {
+  return (
+    <div className="row">
+      <div className="col-lg-8 col-lg-offset-2 text-center">
+        <p className="large">{text}</p>
+      </div>
+    </div>
+  );
+}
+
+const data = {
+    "heading": "Our Amazing Team",
+    "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
+    "team": [
+        {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/1.jpg",
+            "heading": "Kay Garland",
+            "text": "Lead Designer",
+            "social_links": [
+                {
+                    "title": "Twitter",
+                    "icon": "twitter",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link": "#youraccount"
+                }
+            ]
+        },
+        {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/2.jpg",
+            "heading": "Larry Parker",
+            "text": "Lead Marketer",
+            "social_links": [
+                {
+                    "title": "Twitter",
+                    "icon": "twitter",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link": "#youraccount"
+                }
+            ]
+        },
+        {
+            "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg",
+            "heading": "Diana Pertersen",
+            "text": "Lead Developer",
+            "social_links": [
+                {
+                    "title": "Twitter",
+                    "icon": "twitter",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Facebook",
+                    "icon": "facebook",
+                    "link": "#youraccount"
+                },
+                {
+                    "title": "Instagram",
+                    "icon": "instagram",
+                    "link": "#youraccount"
+                }
+            ]
+        }
+    ],
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
+    "style": {
+        "block": {
+            "bg_color": "#eeeeee",
+            "padding_top": 150,
+            "padding_bottom": 150
+        }
+    },
+    "block_id": "team-1495374874481",
+    "template_id": "team",
+    "theme": {
+        "colors": {
+            "bg_color": "#ffffff",
+            "title_text_color": "#333333",
+            "subtitle_text_color": "#777777",
+            "text_color": "#777777",
+            "link_color": "#fed136",
+            "link_hover_color": "#fec503",
+            "primary_color": "#fed136",
+            "selection_text_color": "#ffffff",
+            "selection_bg_color": "#fed136"
+        },
+        "typography": {
+            "title_font_family": "Montserrat",
+            "subtitle_font_family": "Droid Serif",
+            "text_font_family": "Roboto Slab",
+            "type_base_size": 14
+        },
+        "block": {
+            "padding_top": "150",
+            "padding_bottom": "150"
+        }
+    }
+};
+
+ReactDOM.render(<KlarBlock {...data} />, document.querySelector(".team2"));

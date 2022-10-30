@@ -269,6 +269,12 @@
       "icon": "group"
     },
     {
+      "title": "Team 2",
+      "id": "team-2",
+      "icon": "group"
+    },
+
+    {
       "title": "Clients",
       "id": "clients",
       "icon": "group"
@@ -1115,6 +1121,119 @@
       },
       "team": {
         "title": "Team",
+        "properties": {
+          "heading": {
+            "type": "string",
+            "title": "Rubrik" 
+          },
+          "sub_heading": {
+            "type": "string",
+            "title": "Underrubrik" 
+          },
+          "team": {
+            "type": "array",
+            "title": "Team",
+            "items": {
+              "type": "object",
+              "title": "Team member",
+              "display_field": "heading",
+              "properties": {
+                "image": {
+                  "type": "string",
+                  "title": "Bild",
+                  "format": "file",
+                  "default": "https://raw.githubusercontent.com/klar-templates/agency/master/img/team/3.jpg"
+                },
+                "heading": {
+                  "type": "string",
+                  "title": "Rubrik",
+                  "default": "Rubrik"
+                },
+                "text": {
+                  "type": "text",
+                  "title": "Text",
+                  "default": "En kortare text"
+                },
+                "social_links": {
+                  "type": "array",
+                  "title": "Social links",
+                  "default": [
+                    {
+                      "title": "Twitter",
+                      "icon": "twitter",
+                      "link": "#youraccount"
+                    },
+                    {
+                      "title": "Facebook",
+                      "icon": "facebook",
+                      "link": "#youraccount"
+                    },
+                    {
+                      "title": "Instagram",
+                      "icon": "instagram",
+                      "link": "#youraccount"
+                    }
+                  ],
+                  "items": {
+                    "type": "object",
+                    "title": "Länk",
+                    "display_field": "title",
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "title": "Titel",
+                        "default": "Titel"
+                      },
+                      "icon": {
+                        "type": "string",
+                        "title": "Ikon",
+                        "default": "twitter",
+                        "ui:widget": "icon"
+                      },
+                      "link": {
+                        "type": "string",
+                        "title": "Länk",
+                        "format": "uri",
+                        "default": "#youraccount"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "text": {
+            "type": "text",
+            "title": "Text",
+            "field": {
+              "height": "120px"
+            }
+          },
+          "style": {
+            "properties": {
+              "block": {
+                "title": "Block",
+                "type": "object",
+                "ui:css_selector": "#team",
+                "properties": {
+                  "bg_color": {
+                    "ui:css_selector": "${block_id_css_id}",
+                    "$ref": "#/definitions/bg_color"
+                  },
+                  "padding_top": {
+                    "$ref": "#/definitions/block_padding_top"
+                  },
+                  "padding_bottom": {
+                    "$ref": "#/definitions/block_padding_bottom"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "team2": {
+        "title": "Team 2",
         "properties": {
           "heading": {
             "type": "string",
