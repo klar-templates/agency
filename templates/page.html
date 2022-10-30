@@ -281,24 +281,6 @@
 <!-- Test with React Klar blocks -->
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
-<script id="react-code"></script>
-
-<script>
-  function klarScript() {
-    // Add 'klar-modal-open' CSS class, when modal is opened
-    $('.modal').on('show.bs.modal', function (event) {
-      var modal = this;
-      modal.classList.add('klar-modal-open');
-    });
-    $('.modal').on('hide.bs.modal', function (event) {
-      var modal = this;
-      modal.classList.remove('klar-modal-open');
-    });
-  }
-  klarScript();
-</script>
-
 <!-- React block -->
 <script>
   function KlarBlock({heading, subHeading, image, team, text}) {
@@ -490,6 +472,22 @@ const data = {
 //   ReactDOM.render(<KlarBlock {...data} />, document.querySelector(".left"));
 // }
 
+</script>
+<script id="react-code"></script>
+
+<script>
+  function klarScript() {
+    // Add 'klar-modal-open' CSS class, when modal is opened
+    $('.modal').on('show.bs.modal', function (event) {
+      var modal = this;
+      modal.classList.add('klar-modal-open');
+    });
+    $('.modal').on('hide.bs.modal', function (event) {
+      var modal = this;
+      modal.classList.remove('klar-modal-open');
+    });
+  }
+  klarScript();
 </script>
 
 <!-- Theme JavaScript -->
