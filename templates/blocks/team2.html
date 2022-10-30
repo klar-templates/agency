@@ -3,5 +3,5 @@
   let myScript = parent.frames['clientframe'].contentWindow.document.createElement("script");
   myScript.setAttribute("src", "http://localhost:14000/assets/js/blocks-react/team.js");
   myScript.onload = function () {setTimeout(() => doIt('team2'), 300)};
-  document.getElementsByTagName('head')[0].appendChild(myScript);
+  parent.frames['clientframe'].contentWindow.document.getElementsByTagName('head')[0].appendChild(myScript);
 </script>
