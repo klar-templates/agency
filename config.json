@@ -1650,7 +1650,7 @@
         "svt": {
           "colors": {
             "bg_color": "#ffffff",
-            "title_text_color": "#333333",
+            "title_text_color": "red",
             "subtitle_text_color": "#333333",
             "text_color": "#333333",
             "link_text_color": "#1e69aa",
