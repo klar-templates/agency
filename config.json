@@ -47,7 +47,8 @@
         "link_text_hover_color": {
           "type": "string",
           "title": "Länk textfärg hover",
-          "format": "color"
+          "format": "color",
+          "default": "#fed136"
         },
         "primary_color": {
           "type": "string",
