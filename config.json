@@ -269,8 +269,8 @@
       "icon": "group"
     },
     {
-      "title": "Team 2",
-      "id": "team2",
+      "title": "React",
+      "id": "react",
       "icon": "group"
     },
 
@@ -1232,7 +1232,7 @@
           }
         }
       },
-      "team2": {
+      "react": {
         "title": "Team 2",
         "properties": {
           "heading": {
@@ -1962,7 +1962,7 @@
           }
         }
       },
-      "team2": {
+      "react": {
         "heading": "Our Amazing Team",
         "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
         "team": [
