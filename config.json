@@ -1585,7 +1585,7 @@
             "title_text_color": "#333333",
             "subtitle_text_color": "#777777",
             "text_color": "#777777",
-            "link_color": "#fed136",
+            "link_text_hover_color": "#fed136",
             "link_hover_color": "#fec503",
             "primary_color": "#fed136",
             "selection_text_color": "#ffffff",
@@ -1635,8 +1635,8 @@
             "primary_color": "#005da0",
             "selection_text_color": "#f1f1f1",
             "selection_bg_color": "#005da0",
-            "link_color": "#005da0",
-            "link_hover_color": "#005da0"
+            "link_text_color": "#005da0",
+            "link_text_hover_color": "#005da0"
           },
           "typography": {
             "type_base_size": 14
@@ -1653,8 +1653,8 @@
             "title_text_color": "#333333",
             "subtitle_text_color": "#333333",
             "text_color": "#333333",
-            "link_color": "#1e69aa",
-            "link_hover_color": "#1e69aa",
+            "link_text_color": "#1e69aa",
+            "link_text_hover_color": "#1e69aa",
             "primary_color": "#e02e3d",
             "selection_text_color": "#ffffff",
             "selection_bg_color": "#e02e3d"
