@@ -1,22 +1,16 @@
 <section id="{{block_id}}" class="{{template_id}} block"></section>
-
 <script>
-
 function KlarBlock({ heading, subHeading, image, team, text }) {
   return /*#__PURE__*/(
     React.createElement(Block, null, /*#__PURE__*/
     React.createElement(Intro, { heading: heading, subHeading: subHeading }), /*#__PURE__*/
     React.createElement(Members, { team: team, foo: "dfsadf" }), /*#__PURE__*/
     React.createElement(Description, { text: text })));
-
-
 }
 function Block({ children }) {
   return /*#__PURE__*/(
     React.createElement("div", { className: "container" },
     children));
-
-
 }
 function Intro({ heading, subHeading }) {
   return /*#__PURE__*/(
@@ -24,9 +18,6 @@ function Intro({ heading, subHeading }) {
     React.createElement("div", { className: "col-lg-12 text-center" }, /*#__PURE__*/
     React.createElement("h2", { className: "section-heading" }, heading), /*#__PURE__*/
     React.createElement("h3", { className: "section-subheading text-muted" }, subHeading))));
-
-
-
 }
 function Members({ team }) {
   return /*#__PURE__*/(
@@ -67,9 +58,6 @@ function Description({ text }) {
     React.createElement("div", { className: "row" }, /*#__PURE__*/
     React.createElement("div", { className: "col-lg-8 col-lg-offset-2 text-center" }, /*#__PURE__*/
     React.createElement("p", { className: "large" }, text))));
-
-
-
 }
 
 
