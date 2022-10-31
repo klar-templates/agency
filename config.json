@@ -1582,7 +1582,7 @@
         "default": {
           "colors": {
             "bg_color": "#ffffff",
-            "title_text_color": "green",
+            "title_text_color": "#333333",
             "subtitle_text_color": "#777777",
             "text_color": "#777777",
             "link_text_hover_color": "#fed136",
@@ -1650,7 +1650,7 @@
         "svt": {
           "colors": {
             "bg_color": "#ffffff",
-            "title_text_color": "red",
+            "title_text_color": "#333333",
             "subtitle_text_color": "#333333",
             "text_color": "#333333",
             "link_text_color": "#1e69aa",
