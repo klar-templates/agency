@@ -29,7 +29,14 @@ function Intro({ heading, subHeading }) {
 function Members({ team }) {
   return /*#__PURE__*/(
     React.createElement("div", { className: "row clearfix", "data-field-array": "team" },
-    ));
+    team.foreach((member, i) => {
+      return /*#__PURE__*/React.createElement(TeamMember, {
+        image: member.image,
+        name: member.heading,
+        position: member.text,
+        key: i });
+
+    })));
 
 
 
