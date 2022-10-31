@@ -44,7 +44,7 @@
           "format": "color",
           "default": "#fed136"
         },
-        "link_hover_text_color": {
+        "link_text_hover_color": {
           "type": "string",
           "title": "Länk textfärg hover",
           "format": "color",
@@ -130,7 +130,7 @@
       "format": "color",
       "default": "#fed136"
     },
-    "link_hover_text_color": {
+    "link_text_hover_color": {
       "type": "string",
       "title": "Länk textfärg hover",
       "format": "color",
@@ -326,8 +326,8 @@
             "link_text_color": {
               "$ref": "#/definitions/link_text_color"
             },
-            "link_hover_text_color": {
-              "$ref": "#/definitions/link_hover_text_color"
+            "link_text_hover_color": {
+              "$ref": "#/definitions/link_text_hover_color"
             },
             "primary_color": {
               "$ref": "#/definitions/primary_color"
@@ -984,8 +984,8 @@
                   "link_text_color": {
                     "$ref": "#/definitions/link_text_color"
                   },
-                  "link_hover_text_color": {
-                    "$ref": "#/definitions/link_hover_text_color"
+                  "link_text_hover_color": {
+                    "$ref": "#/definitions/link_text_hover_color"
                   },
                   "primary_color": {
                     "ui:css_selector": "#portfolio${block_id_css_class} .btn-primary",
@@ -1095,8 +1095,8 @@
                   "link_text_color": {
                     "$ref": "#/definitions/link_text_color"
                   },
-                  "link_hover_text_color": {
-                    "$ref": "#/definitions/link_hover_text_color"
+                  "link_text_hover_color": {
+                    "$ref": "#/definitions/link_text_hover_color"
                   },
                   "primary_color": {
                     "$ref": "#/definitions/primary_color"
@@ -1585,8 +1585,8 @@
             "title_text_color": "#333333",
             "subtitle_text_color": "#777777",
             "text_color": "#777777",
-            "link_text_hover_color": "#fed136",
-            "link_hover_color": "#fec503",
+            "link_text_color": "#fed136",
+            "link_text_hover_color": "#fec503",
             "primary_color": "#fed136",
             "selection_text_color": "#ffffff",
             "selection_bg_color": "#fed136"
