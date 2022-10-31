@@ -173,7 +173,7 @@ const data = {
       "padding_top": "150",
       "padding_bottom": "150" } } };
 
-if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
+if (!parent.frames['clientframe'].contentWindow.ReactDOM) {
   setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2")), 0);
 } else {
   parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2"));
