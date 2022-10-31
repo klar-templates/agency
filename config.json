@@ -1868,26 +1868,26 @@
         "items": [
           {
             "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/1.jpg",
-            "title": "2009-2011",
-            "subtitle": "Our Humble Beginnings",
+            "title": "Our Humble Beginnings",
+            "subtitle": "2009-2011",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           },
           {
             "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/2.jpg",
-            "title": "March 2011",
-            "subtitle": "An Agency is Born",
+            "title": "An Agency is Born",
+            "subtitle": "March 2011",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           },
           {
             "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/3.jpg",
-            "title": "December 2012",
-            "subtitle": "Transition to Full Service",
+            "title": "Transition to Full Service",
+            "subtitle": "December 2012",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           },
           {
             "image": "https://raw.githubusercontent.com/klar-templates/agency/master/img/about/4.jpg",
-            "title": "July 2014",
-            "subtitle": "Phase Two Expansion",
+            "title": "Phase Two Expansion",
+            "subtitle": "July 2014",
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           }
         ],
