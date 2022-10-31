@@ -2,6 +2,8 @@
 
 </section>
 <script>
+const blockId = '.{{block_id}}';
+
 function KlarBlock({ heading, subHeading, image, team, text }) {
   return /*#__PURE__*/(
     React.createElement(Block, null, /*#__PURE__*/
@@ -176,10 +178,10 @@ const data = {
       "padding_bottom": "150" } } };
 
 
-console.log('{{block_id}}')
+console.log(blockId)
 if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
-  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".react")), 300);
+  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(blockId)), 300);
 } else {
-  parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".react"));
+  parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(blockId));
 }
 </script>
