@@ -2143,13 +2143,6 @@
   },
   "blocks_default": [
     "navigation",
-    "header",
-    "services",
-    "portfolio",
-    "about",
-    "team",
-    "clients",
-    "contact",
-    "footer"
+    "header"
   ]
 }
