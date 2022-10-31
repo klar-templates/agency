@@ -72,10 +72,10 @@ function Description({ text }) {
 
 }
 
-console.log(parent.window.page.data);
-// if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
-//   // setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}')), 300);
-// } else {
-//   parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, window.klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}'));
-// }
+console.log(parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}'));
+if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
+  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}')), 300);
+} else {
+  parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}'));
+}
 </script>
