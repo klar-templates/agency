@@ -1,4 +1,6 @@
-<section id="team2-123" class="team2 block"></section>
+<section id="{{block_id}}" class="{{template_id}} block">
+
+</section>
 <script>
 function KlarBlock({ heading, subHeading, image, team, text }) {
   return /*#__PURE__*/(
@@ -176,8 +178,8 @@ const data = {
 
 console.log('{{block_id}}')
 if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
-  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2")), 300);
+  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".{{block_id}}")), 300);
 } else {
-  parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2"));
+  parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".{{block_id}}"));
 }
 </script>
