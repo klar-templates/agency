@@ -72,18 +72,15 @@ function Description({ text }) {
 
 }
 
-let fooCurrentPage;
 let gnuThisBlockData;
-console.log(window.page)
+
 
 console.log('#{{block_id}}')
 if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
-  fooCurrentPage = window.page.data.pages((page) => page.id === 'index') // This will be currentPage later on
-  gnuThisBlockData = fooCurrentPage.blocks['{{block_id}}']
+  gnuThisBlockData = klar.blocks.get('{{template_id}}', '{{block_id}}');
   setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, gnuThisBlockData), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}')), 300);
 } else {
-  fooCurrentPage = window.page.data.pages((page) => page.id === 'index') // This will be currentPage later on
-  gnuThisBlockData = fooCurrentPage.blocks['{{block_id}}']
+  gnuThisBlockData = klar.blocks.get('{{template_id}}', '{{block_id}}');
   parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, gnuThisBlockData), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}'));
 }
 </script>
