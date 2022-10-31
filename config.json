@@ -1582,7 +1582,7 @@
         "default": {
           "colors": {
             "bg_color": "#ffffff",
-            "title_text_color": "#333333",
+            "title_text_color": "green",
             "subtitle_text_color": "#777777",
             "text_color": "#777777",
             "link_text_hover_color": "#fed136",
