@@ -1577,7 +1577,7 @@
   },
   "settings": {
     "theme": {
-      "current": "default",
+      "current": "svt",
       "presets": {
         "default": {
           "colors": {
@@ -1645,6 +1645,29 @@
             "lead_in_text_color": "#ffffff",
             "title_text_color": "#ffffff",
             "button_bg_color": "#005da0"
+          }
+        },
+        "svt": {
+          "colors": {
+            "bg_color": "#ffffff",
+            "title_text_color": "#333333",
+            "subtitle_text_color": "#333333",
+            "text_color": "#333333",
+            "link_color": "#1e69aa",
+            "link_hover_color": "#1e69aa",
+            "primary_color": "#e02e3d",
+            "selection_text_color": "#ffffff",
+            "selection_bg_color": "#e02e3d"
+          },
+          "typography": {
+            "title_font_family": "Montserrat",
+            "subtitle_font_family": "Droid Serif",
+            "text_font_family": "Roboto Slab",
+            "type_base_size": 14
+          },
+          "block": {
+            "padding_top": "150",
+            "padding_bottom": "150"
           }
         }
       }
