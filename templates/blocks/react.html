@@ -174,8 +174,8 @@ const data = {
       "padding_bottom": "150" } } };
 
       // console.log(parent.frames['clientframe'].contentWindow.ReactDOM)
-if (parent.frames['clientframe'].contentWindow.ReactDOM === undefined) {
-  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2")), 0);
+if (parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
+  setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2")), 300);
 } else {
   parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, data), parent.frames['clientframe'].contentWindow.document.querySelector(".team2"));
 }
