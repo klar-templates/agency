@@ -72,7 +72,8 @@ function Description({ text }) {
 
 }
 
-console.log('#{{block_id}}')
+console.log(klar)
+console.log(page)
 if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
   // setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}')), 300);
 } else {
