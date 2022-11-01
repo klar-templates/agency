@@ -1,307 +1,6 @@
 {
   "name": "agency",
   "version": "0.0.0",
-  "definitions": {
-    "colors": {
-      "title": "Färger",
-      "type": "object",
-      "properties": {
-        "bg_color": {
-          "type": "string",
-          "title": "Bakgrundsfärg",
-          "format": "color",
-          "ui:css_selector": "${block_id_css_id}",
-          "ui:css_property": "background-color",
-          "default": "#ffffff"
-        },
-        "title_text_color": {
-          "type": "string",
-          "title": "Rubrikfärg",
-          "format": "color",
-          "ui:css_selector": "${block_id_css_id} .section-heading, ${block_id_css_id} h1, ${block_id_css_id} h2, ${block_id_css_id} 3, ${block_id_css_id} h4, ${block_id_css_id} h5, ${block_id_css_id} h6",
-          "ui:css_property": "color",
-          "default": "#333333"
-        },
-        "subtitle_text_color": {
-          "type": "string",
-          "title": "Underrubrikfärg",
-          "format": "color",
-          "ui:css_selector": "body ${block_id_css_id} h3.section-subheading",
-          "ui:css_property": "color",
-          "default": "#777777"
-        },
-        "text_color": {
-          "type": "string",
-          "title": "Textfärg",
-          "format": "color",
-          "ui:css_selector": "${block_id_css_id} p",
-          "ui:css_property": "color",
-          "default": "#777777"
-        },
-        "link_text_color": {
-          "type": "string",
-          "title": "Länk textfärg",
-          "format": "color",
-          "default": "#fed136"
-        },
-        "link_text_hover_color": {
-          "type": "string",
-          "title": "Länk textfärg hover",
-          "format": "color",
-          "default": "#fed136"
-        },
-        "primary_color": {
-          "type": "string",
-          "title": "Primary color",
-          "format": "color",
-          "ui:css_selector": "${block_id_css_id} .btn-primary, ${block_id_css_id} .text-primary",
-          "ui:css_property": "color",
-          "default": "#fed136"
-        },
-        "selection_text_color": {
-          "type": "string",
-          "title": "Text selection color",
-          "format": "color",
-          "default": "#ffffff"
-        },
-        "selection_bg_color": {
-          "type": "string",
-          "title": "Text selection bg color",
-          "format": "color",
-          "default": "#fed136"
-        }
-      }
-    },
-    "layout": {
-      "title": "Layout",
-      "type": "object",
-      "properties": {
-        "padding_top": {
-          "type": "integer",
-          "title": "Padding top",
-          "minimum": 0,
-          "maximum": 150,
-          "default": 150
-        },
-        "padding_bottom": {
-          "type": "integer",
-          "title": "Padding bottom",
-          "minimum": 0,
-          "maximum": 150,
-          "default": 150
-        }
-      }
-    },
-    "bg_color": {
-      "type": "string",
-      "title": "Bakgrundsfärg",
-      "format": "color",
-      "ui:css_selector": "body",
-      "ui:css_property": "background-color",
-      "default": "#ffffff"
-    },
-    "title_text_color": {
-      "type": "string",
-      "title": "Rubrikfärg",
-      "format": "color",
-      "ui:css_selector": "${block_id_css_id} .section-heading, ${block_id_css_id} h1, ${block_id_css_id} h2, ${block_id_css_id} 3, ${block_id_css_id} h4, ${block_id_css_id} h5, ${block_id_css_id} h6",
-      "ui:css_property": "color",
-      "default": "#333333"
-    },
-    "subtitle_text_color": {
-      "type": "string",
-      "title": "Underrubrikfärg",
-      "format": "color",
-      "ui:css_selector": "body ${block_id_css_id} h3.section-subheading",
-      "ui:css_property": "color",
-      "default": "#777777"
-    },
-    "text_color": {
-      "type": "string",
-      "title": "Textfärg",
-      "format": "color",
-      "ui:css_selector": "${block_id_css_id} p",
-      "ui:css_property": "color",
-      "default": "#777777"
-    },
-    "link_text_color": {
-      "type": "string",
-      "title": "Länk textfärg",
-      "format": "color",
-      "default": "#fed136"
-    },
-    "link_text_hover_color": {
-      "type": "string",
-      "title": "Länk textfärg hover",
-      "format": "color",
-      "default": "#fed136"
-    },
-    "primary_color": {
-      "type": "string",
-      "title": "Primary color",
-      "format": "color",
-      "ui:css_selector": "${block_id_css_id} .btn-primary, ${block_id_css_id} .text-primary",
-      "ui:css_property": "color",
-      "default": "#fed136"
-    },
-    "selection_text_color": {
-      "type": "string",
-      "title": "Text selection color",
-      "format": "color",
-      "default": "#ffffff"
-    },
-    "selection_bg_color": {
-      "type": "string",
-      "title": "Text selection bg color",
-      "format": "color",
-      "default": "#fed136"
-    },
-    "block_padding_top": {
-      "type": "integer",
-      "title": "Padding top",
-      "minimum": 0,
-      "maximum": 150,
-      "default": 150
-    },
-    "block_padding_bottom": {
-      "type": "integer",
-      "title": "Padding bottom",
-      "minimum": 0,
-      "maximum": 150,
-      "default": 150
-    },
-    "title_font_family": {
-      "type": "string",
-      "title": "Title",
-      "enum": [
-        "Open Sans",
-        "Raleway",
-        "Roboto",
-        "Lato",
-        "Oswald",
-        "Source Sans Pro",
-        "Montserrat",
-        "Droid Serif",
-        "Roboto Slab",
-        "Kaushan Script",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        "sans-serif"
-      ]
-    },
-    "subtitle_font_family": {
-      "type": "string",
-      "title": "Subtitle",
-      "enum": [
-        "Open Sans",
-        "Raleway",
-        "Roboto",
-        "Lato",
-        "Oswald",
-        "Source Sans Pro",
-        "Montserrat",
-        "Droid Serif",
-        "Roboto Slab",
-        "Kaushan Script",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        "sans-serif"
-      ]
-    },
-    "text_font_family": {
-      "type": "string",
-      "title": "Text",
-      "enum": [
-        "Open Sans",
-        "Raleway",
-        "Roboto",
-        "Lato",
-        "Oswald",
-        "Source Sans Pro",
-        "Montserrat",
-        "Droid Serif",
-        "Roboto Slab",
-        "Kaushan Script",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        "sans-serif"
-      ]
-    },
-    "type_base_size": {
-      "type": "integer",
-      "minimum": 10,
-      "maximum": 18,
-      "title": "Basstorlek"
-    }
-  },
-  "block_templates": [
-    {
-      "title": "Navigation",
-      "id": "navigation",
-      "icon": "navicon"
-    },
-    {
-      "title": "Header",
-      "id": "header",
-      "icon": "image"
-    },
-    {
-      "title": "Services",
-      "id": "services",
-      "icon": "file-text-o"
-    },
-    {
-      "title": "Portfolio",
-      "id": "portfolio",
-      "icon": "book"
-    },
-    {
-      "title": "About",
-      "id": "about",
-      "icon": "group"
-    },
-    {
-      "title": "Team",
-      "id": "team",
-      "icon": "group"
-    },
-    {
-      "title": "Clients",
-      "id": "clients",
-      "icon": "group"
-    },
-    {
-      "title": "Contact",
-      "id": "contact",
-      "icon": "address-card-o"
-    },
-    {
-      "title": "Footer",
-      "id": "footer",
-      "icon": "address-card-o"
-    }
-  ],
-  "page_types": [
-    {
-      "title": "Undersida",
-      "id": "sub-page"
-    },
-    {
-      "title": "Blogg",
-      "id": "blog-page"
-    },
-    {
-      "title": "Kontaktsida",
-      "id": "contact-page"
-    },
-    {
-      "title": "Startsida",
-      "id": "index"
-    }
-  ],
   "settings_schema": {
     "theme": {
       "title": "Tema",
@@ -2158,8 +1857,309 @@
       }
     }
   },
+  "page_types": [
+    {
+      "title": "Undersida",
+      "id": "sub-page"
+    },
+    {
+      "title": "Blogg",
+      "id": "blog-page"
+    },
+    {
+      "title": "Kontaktsida",
+      "id": "contact-page"
+    },
+    {
+      "title": "Startsida",
+      "id": "index"
+    }
+  ],
   "blocks_default": [
     "navigation",
     "header"
-  ]
+  ],
+  "block_templates": [
+    {
+      "title": "Navigation",
+      "id": "navigation",
+      "icon": "navicon"
+    },
+    {
+      "title": "Header",
+      "id": "header",
+      "icon": "image"
+    },
+    {
+      "title": "Services",
+      "id": "services",
+      "icon": "file-text-o"
+    },
+    {
+      "title": "Portfolio",
+      "id": "portfolio",
+      "icon": "book"
+    },
+    {
+      "title": "About",
+      "id": "about",
+      "icon": "group"
+    },
+    {
+      "title": "Team",
+      "id": "team",
+      "icon": "group"
+    },
+    {
+      "title": "Clients",
+      "id": "clients",
+      "icon": "group"
+    },
+    {
+      "title": "Contact",
+      "id": "contact",
+      "icon": "address-card-o"
+    },
+    {
+      "title": "Footer",
+      "id": "footer",
+      "icon": "address-card-o"
+    }
+  ],
+  "definitions": {
+    "colors": {
+      "title": "Färger",
+      "type": "object",
+      "properties": {
+        "bg_color": {
+          "type": "string",
+          "title": "Bakgrundsfärg",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id}",
+          "ui:css_property": "background-color",
+          "default": "#ffffff"
+        },
+        "title_text_color": {
+          "type": "string",
+          "title": "Rubrikfärg",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id} .section-heading, ${block_id_css_id} h1, ${block_id_css_id} h2, ${block_id_css_id} 3, ${block_id_css_id} h4, ${block_id_css_id} h5, ${block_id_css_id} h6",
+          "ui:css_property": "color",
+          "default": "#333333"
+        },
+        "subtitle_text_color": {
+          "type": "string",
+          "title": "Underrubrikfärg",
+          "format": "color",
+          "ui:css_selector": "body ${block_id_css_id} h3.section-subheading",
+          "ui:css_property": "color",
+          "default": "#777777"
+        },
+        "text_color": {
+          "type": "string",
+          "title": "Textfärg",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id} p",
+          "ui:css_property": "color",
+          "default": "#777777"
+        },
+        "link_text_color": {
+          "type": "string",
+          "title": "Länk textfärg",
+          "format": "color",
+          "default": "#fed136"
+        },
+        "link_text_hover_color": {
+          "type": "string",
+          "title": "Länk textfärg hover",
+          "format": "color",
+          "default": "#fed136"
+        },
+        "primary_color": {
+          "type": "string",
+          "title": "Primary color",
+          "format": "color",
+          "ui:css_selector": "${block_id_css_id} .btn-primary, ${block_id_css_id} .text-primary",
+          "ui:css_property": "color",
+          "default": "#fed136"
+        },
+        "selection_text_color": {
+          "type": "string",
+          "title": "Text selection color",
+          "format": "color",
+          "default": "#ffffff"
+        },
+        "selection_bg_color": {
+          "type": "string",
+          "title": "Text selection bg color",
+          "format": "color",
+          "default": "#fed136"
+        }
+      }
+    },
+    "layout": {
+      "title": "Layout",
+      "type": "object",
+      "properties": {
+        "padding_top": {
+          "type": "integer",
+          "title": "Padding top",
+          "minimum": 0,
+          "maximum": 150,
+          "default": 150
+        },
+        "padding_bottom": {
+          "type": "integer",
+          "title": "Padding bottom",
+          "minimum": 0,
+          "maximum": 150,
+          "default": 150
+        }
+      }
+    },
+    "bg_color": {
+      "type": "string",
+      "title": "Bakgrundsfärg",
+      "format": "color",
+      "ui:css_selector": "body",
+      "ui:css_property": "background-color",
+      "default": "#ffffff"
+    },
+    "title_text_color": {
+      "type": "string",
+      "title": "Rubrikfärg",
+      "format": "color",
+      "ui:css_selector": "${block_id_css_id} .section-heading, ${block_id_css_id} h1, ${block_id_css_id} h2, ${block_id_css_id} 3, ${block_id_css_id} h4, ${block_id_css_id} h5, ${block_id_css_id} h6",
+      "ui:css_property": "color",
+      "default": "#333333"
+    },
+    "subtitle_text_color": {
+      "type": "string",
+      "title": "Underrubrikfärg",
+      "format": "color",
+      "ui:css_selector": "body ${block_id_css_id} h3.section-subheading",
+      "ui:css_property": "color",
+      "default": "#777777"
+    },
+    "text_color": {
+      "type": "string",
+      "title": "Textfärg",
+      "format": "color",
+      "ui:css_selector": "${block_id_css_id} p",
+      "ui:css_property": "color",
+      "default": "#777777"
+    },
+    "link_text_color": {
+      "type": "string",
+      "title": "Länk textfärg",
+      "format": "color",
+      "default": "#fed136"
+    },
+    "link_text_hover_color": {
+      "type": "string",
+      "title": "Länk textfärg hover",
+      "format": "color",
+      "default": "#fed136"
+    },
+    "primary_color": {
+      "type": "string",
+      "title": "Primary color",
+      "format": "color",
+      "ui:css_selector": "${block_id_css_id} .btn-primary, ${block_id_css_id} .text-primary",
+      "ui:css_property": "color",
+      "default": "#fed136"
+    },
+    "selection_text_color": {
+      "type": "string",
+      "title": "Text selection color",
+      "format": "color",
+      "default": "#ffffff"
+    },
+    "selection_bg_color": {
+      "type": "string",
+      "title": "Text selection bg color",
+      "format": "color",
+      "default": "#fed136"
+    },
+    "block_padding_top": {
+      "type": "integer",
+      "title": "Padding top",
+      "minimum": 0,
+      "maximum": 150,
+      "default": 150
+    },
+    "block_padding_bottom": {
+      "type": "integer",
+      "title": "Padding bottom",
+      "minimum": 0,
+      "maximum": 150,
+      "default": 150
+    },
+    "title_font_family": {
+      "type": "string",
+      "title": "Title",
+      "enum": [
+        "Open Sans",
+        "Raleway",
+        "Roboto",
+        "Lato",
+        "Oswald",
+        "Source Sans Pro",
+        "Montserrat",
+        "Droid Serif",
+        "Roboto Slab",
+        "Kaushan Script",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "subtitle_font_family": {
+      "type": "string",
+      "title": "Subtitle",
+      "enum": [
+        "Open Sans",
+        "Raleway",
+        "Roboto",
+        "Lato",
+        "Oswald",
+        "Source Sans Pro",
+        "Montserrat",
+        "Droid Serif",
+        "Roboto Slab",
+        "Kaushan Script",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "text_font_family": {
+      "type": "string",
+      "title": "Text",
+      "enum": [
+        "Open Sans",
+        "Raleway",
+        "Roboto",
+        "Lato",
+        "Oswald",
+        "Source Sans Pro",
+        "Montserrat",
+        "Droid Serif",
+        "Roboto Slab",
+        "Kaushan Script",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "type_base_size": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 18,
+      "title": "Basstorlek"
+    }
+  }
 }
