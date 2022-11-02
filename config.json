@@ -1859,19 +1859,19 @@
   "page_types": [
     {
       "title": "Undersida",
-      "id": "sub-page"
+      "name": "sub-page"
     },
     {
       "title": "Blogg",
-      "id": "blog-page"
+      "name": "blog-page"
     },
     {
       "title": "Kontaktsida",
-      "id": "contact-page"
+      "name": "contact-page"
     },
     {
       "title": "Startsida",
-      "id": "index"
+      "name": "index"
     }
   ],
   "blocks_default": [
