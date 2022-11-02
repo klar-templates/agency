@@ -1881,47 +1881,47 @@
   "block_templates": [
     {
       "title": "Navigation",
-      "id": "navigation",
+      "name": "navigation",
       "icon": "navicon"
     },
     {
       "title": "Header",
-      "id": "header",
+      "name": "header",
       "icon": "image"
     },
     {
       "title": "Services",
-      "id": "services",
+      "name": "services",
       "icon": "file-text-o"
     },
     {
       "title": "Portfolio",
-      "id": "portfolio",
+      "name": "portfolio",
       "icon": "book"
     },
     {
       "title": "About",
-      "id": "about",
+      "name": "about",
       "icon": "group"
     },
     {
       "title": "Team",
-      "id": "team",
+      "name": "team",
       "icon": "group"
     },
     {
       "title": "Clients",
-      "id": "clients",
+      "name": "clients",
       "icon": "group"
     },
     {
       "title": "Contact",
-      "id": "contact",
+      "name": "contact",
       "icon": "address-card-o"
     },
     {
       "title": "Footer",
-      "id": "footer",
+      "name": "footer",
       "icon": "address-card-o"
     }
   ],
