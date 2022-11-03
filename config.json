@@ -75,7 +75,7 @@
     "page": {
       "title": "Sidinställningar",
       "properties": {
-        "data": {
+        "settings": {
           "title": "Titel och beskrivning",
           "type": "object",
           "properties": {
