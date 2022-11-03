@@ -75,7 +75,7 @@
     "page": {
       "title": "Sidinställningar",
       "properties": {
-        "data": {
+        "settings": {
           "title": "Titel och beskrivning",
           "type": "object",
           "properties": {
@@ -1371,7 +1371,7 @@
       }
     },
     "page": {
-      "data": {
+      "settings": {
         "title": "Agency - Start Bootstrap Theme",
         "description": "This is my one page website and it's beautiful!"
       }
