@@ -1874,10 +1874,7 @@
       "name": "index"
     }
   ],
-  "blocks_default": [
-    "navigation",
-    "header"
-  ],
+  "blocks_default": [],
   "block_templates": [
     {
       "title": "Navigation",
