@@ -1859,11 +1859,11 @@
   "page_types": [
     {
       "title": "Startsida",
-      "name": "index"
+      "name": "startpage"
     },
     {
       "title": "Undersida",
-      "name": "sub-page"
+      "name": "subpage"
     },
     {
       "title": "Blogg",
