@@ -1858,6 +1858,10 @@
   },
   "page_types": [
     {
+      "title": "Startsida",
+      "name": "index"
+    },
+    {
       "title": "Undersida",
       "name": "sub-page"
     },
@@ -1868,10 +1872,6 @@
     {
       "title": "Kontaktsida",
       "name": "contact-page"
-    },
-    {
-      "title": "Startsida",
-      "name": "index"
     }
   ],
   "blocks_default": [],
