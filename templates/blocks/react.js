@@ -1,4 +1,3 @@
-<script type="text/babel">
 document.write('<section id="{{block_id}}" class="{{template_id}} block"></section>');
 function KlarBlock({heading, subHeading, image, team, text}) {
   return (
@@ -80,4 +79,3 @@ if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') 
   console.log(parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}'));
   parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}'));
 }
-</script>
