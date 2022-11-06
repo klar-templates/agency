@@ -1,4 +1,9 @@
-document.querySelector('.full').appendChild('<section id="{{block_id}}" class="{{template_id}} block"></section>');
+const fooaSectionTest = document.createElement('section');
+fooaSectionTest.id = '{{block_id}}';
+fooaSectionTest.classList.add('{{template_id}}');
+fooaSectionTest.classList.add('block');
+document.querySelector('.full').appendChild(fooaSectionTest);
+// document.querySelector('.full').appendChild('<section id="{{block_id}}" class="{{template_id}} block"></section>');
 function KlarBlock({heading, subHeading, image, team, text}) {
   return (
     <Block>
