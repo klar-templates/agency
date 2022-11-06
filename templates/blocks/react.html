@@ -1,64 +1,78 @@
 <section id="{{block_id}}" class="{{template_id}} block"></section>
 
 <script>
-function KlarBlock({ heading, subHeading, image, team, text }) {
-  return /*#__PURE__*/(
-    React.createElement(Block, null, /*#__PURE__*/
-    React.createElement(Intro, { heading: heading, subHeading: subHeading }), /*#__PURE__*/
-    React.createElement(Members, { team: team, foo: "dfsadf" }), /*#__PURE__*/
-    React.createElement(Description, { text: text })));
+function KlarBlock({heading, subHeading, image, team, text}) {
+  return (
+    <Block>
+      <Intro heading={heading} subHeading={subHeading} />
+      <Members team={team} foo="dfsadf" />
+      <Description text={text} />
+    </Block>
+  );
 }
-function Block({ children }) {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "container" },
-    children));
+function Block({children}) {
+  return (
+    <div className="container">
+      {children}
+    </div>
+  );
 }
-function Intro({ heading, subHeading }) {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "row" }, /*#__PURE__*/
-    React.createElement("div", { className: "col-lg-12 text-center" }, /*#__PURE__*/
-    React.createElement("h2", { className: "section-heading" }, heading), /*#__PURE__*/
-    React.createElement("h3", { className: "section-subheading text-muted" }, subHeading))));
+function Intro({heading, subHeading}) {
+  return (
+    <div className="row">
+      <div className="col-lg-12 text-center">
+        <h2 className="section-heading">{heading}</h2>
+        <h3 className="section-subheading text-muted">{subHeading}</h3>
+      </div>
+    </div>
+  );
 }
-function Members({ team }) {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "row clearfix", "data-field-array": "team" },
-    team.map((member, i) => {
-      return /*#__PURE__*/React.createElement(TeamMember, {
-        image: member.image,
-        name: member.heading,
-        position: member.text,
-        key: i });
-    })));
+function Members({team}) {
+  return (
+    <div className="row clearfix" data-field-array="team">
+    { team.map((member, i) => {
+      return <TeamMember
+          image={member.image}
+          name={member.heading}
+          position={member.text}
+          key={i}
+      />
+      })
+    }
+    </div>
+  );
 }
-function TeamMember({ name, position, image, socialLinks }) {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "col-sm-4" }, /*#__PURE__*/
-    React.createElement("div", { className: "team-member", "data-field-array-item": "" }, /*#__PURE__*/
-    React.createElement("img", { src: image, className: "img-responsive img-circle", "no-data-placement": "top", "no-data-inset": "true", alt: name }), /*#__PURE__*/
-    React.createElement("h4", null, name), /*#__PURE__*/
-    React.createElement("p", null, position), /*#__PURE__*/
-    React.createElement("ul", { className: "list-inline social-buttons" }, /*#__PURE__*/
-    React.createElement("li", null, /*#__PURE__*/
-    React.createElement("a", { href: "#youraccount" }, /*#__PURE__*/React.createElement("i", { className: "fa fa-twitter" }))), /*#__PURE__*/
+function TeamMember({name, position, image, socialLinks}) {
+  return (
+    <div className="col-sm-4">
+      <div className="team-member" data-field-array-item="">
+        <img src={image} className="img-responsive img-circle" no-data-placement="top" no-data-inset="true" alt={name} />
+        <h4>{name}</h4>
+        <p>{position}</p>
+        <ul className="list-inline social-buttons">
+          <li>
+            <a href="#youraccount"><i className="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#youraccount"><i className="fa fa-facebook"></i></a>
+          </li>
 
-    React.createElement("li", null, /*#__PURE__*/
-    React.createElement("a", { href: "#youraccount" }, /*#__PURE__*/React.createElement("i", { className: "fa fa-facebook" }))), /*#__PURE__*/
-
-
-    React.createElement("li", null, /*#__PURE__*/
-    React.createElement("a", { href: "#youraccount" }, /*#__PURE__*/React.createElement("i", { className: "fa fa-instagram" })))))));
-
-
-
-
-
+          <li>
+            <a href="#youraccount"><i className="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
-function Description({ text }) {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "row" }, /*#__PURE__*/
-    React.createElement("div", { className: "col-lg-8 col-lg-offset-2 text-center" }, /*#__PURE__*/
-    React.createElement("p", { className: "large" }, text))));
+function Description({text}) {
+  return (
+    <div className="row">
+      <div className="col-lg-8 col-lg-offset-2 text-center">
+        <p className="large">{text}</p>
+      </div>
+    </div>
+  );
 }
 
 if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
