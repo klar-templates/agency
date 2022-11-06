@@ -1,4 +1,4 @@
-document.write('<section id="{{block_id}}" class="{{template_id}} block"></section>');
+document.querySelector('.full').appendChild('<section id="{{block_id}}" class="{{template_id}} block"></section>');
 function KlarBlock({heading, subHeading, image, team, text}) {
   return (
     <Block>
