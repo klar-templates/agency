@@ -3,6 +3,8 @@ fooaSectionTest.id = '{{block_id}}';
 fooaSectionTest.classList.add('{{template_id}}');
 fooaSectionTest.classList.add('block');
 parent.frames['clientframe'].contentWindow.document.querySelector('.full').appendChild(fooaSectionTest);
+
+
 function KlarBlock({heading, subHeading, image, team, text}) {
   return (
     <Block>
@@ -80,6 +82,6 @@ function Description({text}) {
 if (typeof parent.frames['clientframe'].contentWindow.ReactDOM === 'undefined') {
   setTimeout(()=>parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}')), 300);
 } else {
-  console.log(parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}'));
+  // console.log(parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}'));
   parent.frames['clientframe'].contentWindow.ReactDOM.render( /*#__PURE__*/React.createElement(KlarBlock, parent.window.klar.blocks.get('{{template_id}}', '{{block_id}}')), parent.frames['clientframe'].contentWindow.document.querySelector('#{{block_id}}'));
 }
