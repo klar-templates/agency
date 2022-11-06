@@ -1456,7 +1456,7 @@
           "button_text_color": "#ffffff",
           "padding_top": 300,
           "padding_bottom": 200,
-          "full_screen": false,
+          "full_screen": true,
           "text_align": "center",
           "show_overlay": true,
           "overlay_bg_color": "#000000",
