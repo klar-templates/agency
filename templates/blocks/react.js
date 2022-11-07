@@ -13,7 +13,7 @@ function Block({style, id, templateId, children}) {
       <div className="container">
         {children}
       </div>
-      <Style />
+      <Style id={id} templateId={templateId} />
     </section>
   );
 }
@@ -78,7 +78,7 @@ function Description({text}) {
     </div>
   );
 }
-function Style() {
+function Style({id, templateId}) {
   const style = `
     <style>
       body {
