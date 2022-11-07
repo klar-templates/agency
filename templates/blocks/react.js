@@ -1,13 +1,6 @@
 function KlarBlock({block_id, template_id, block: {heading, subHeading, image, team, text} }) {
-  const style = `
-    <style>
-      body {
-        background-color: red;
-      }
-    </style>
-  `;
   return (
-    <Block style={style} id={block_id} templateId={template_id}>
+    <Block id={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
       <Members team={team} />
       <Description text={text} />
@@ -20,7 +13,7 @@ function Block({style, id, templateId, children}) {
       <div className="container">
         {children}
       </div>
-      <div dangerouslySetInnerHTML={{__html: style}} />
+      <Style />
     </section>
   );
 }
@@ -84,4 +77,14 @@ function Description({text}) {
       </div>
     </div>
   );
+}
+function Style() {
+  const style = `
+    <style>
+      body {
+        background-color: red;
+      }
+    </style>
+  `;
+  return <div dangerouslySetInnerHTML={{__html: style}} />;
 }
