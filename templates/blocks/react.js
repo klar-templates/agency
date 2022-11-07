@@ -1,5 +1,4 @@
 function KlarBlock({block_id, template_id, block: {heading, subHeading, image, team, text} }) {
-  console.log('hehehe: ', window.page.data.pages)
   return (
     <Block blockId={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
