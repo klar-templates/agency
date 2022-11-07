@@ -25,6 +25,10 @@ function Intro({heading, subHeading}) {
   );
 }
 function Members({team}) {
+  if (!team) {
+    return false;
+  }
+  
   return (
     <div className="row clearfix" data-field-array="team">
     { team.map((member, i) => {
