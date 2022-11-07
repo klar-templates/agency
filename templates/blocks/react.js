@@ -9,11 +9,19 @@ function KlarBlock(props) {
   );
 }
 function Block({id, templateId, children}) {
+  const style = `
+    <style>
+      body {
+        background-color: red;
+      }
+    </style>
+  `;
   return (
     <section id={id} className={`${templateId} block`}>
       <div className="container">
         {children}
       </div>
+      <div>{style}</div>
     </section>
   );
 }
