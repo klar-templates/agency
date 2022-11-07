@@ -1,5 +1,5 @@
 {
-  init: function ({heading, subHeading, image, team, text}) {
+  init: function KlarBlock({heading, subHeading, image, team, text}) {
     return (
       <div>
         {heading}
