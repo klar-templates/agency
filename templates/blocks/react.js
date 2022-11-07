@@ -2,11 +2,13 @@ function KlarBlock(props) {
   const {heading, subHeading, image, team, text} = props.block;
   console.log('props: ', props)
   return (
-    <Block>
-      <Intro heading={heading} subHeading={subHeading} />
-      <Members team={team} foo="dfsadf" />
-      <Description text={text} />
-    </Block>
+    <section id={props.block_id} class={`${props.template_id} block`}>
+      <Block>
+        <Intro heading={heading} subHeading={subHeading} />
+        <Members team={team} foo="dfsadf" />
+        <Description text={text} />
+      </Block>
+    </section>
   );
 }
 function Block({children}) {
