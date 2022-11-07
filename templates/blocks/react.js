@@ -1,5 +1,6 @@
 function KlarBlockreact(props) {
   const {heading, subHeading, image, team, text} = props.block;
+  console.log('props: ', props)
   return (
     <Block>
       <Intro heading={heading} subHeading={subHeading} />
