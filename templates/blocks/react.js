@@ -1,5 +1,4 @@
-function KlarBlock(props) {
-  const {heading, subHeading, image, team, text} = props.block;
+function KlarBlock({block_id, template_id, block: {heading, subHeading, image, team, text} }) {
   const style = `
     <style>
       body {
@@ -8,7 +7,7 @@ function KlarBlock(props) {
     </style>
   `;
   return (
-    <Block style={style} id={props.block_id} templateId={props.template_id}>
+    <Block style={style} id={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
       <Members team={team} />
       <Description text={text} />
