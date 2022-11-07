@@ -1,14 +1,5 @@
 function KlarBlock(props) {
   const {heading, subHeading, image, team, text} = props.block;
-  return (
-    <Block id={props.block_id} templateId={props.template_id}>
-      <Intro heading={heading} subHeading={subHeading} />
-      <Members team={team} />
-      <Description text={text} />
-    </Block>
-  );
-}
-function Block({id, templateId, children}) {
   const style = `
     <style>
       body {
@@ -16,6 +7,15 @@ function Block({id, templateId, children}) {
       }
     </style>
   `;
+  return (
+    <Block style={style} id={props.block_id} templateId={props.template_id}>
+      <Intro heading={heading} subHeading={subHeading} />
+      <Members team={team} />
+      <Description text={text} />
+    </Block>
+  );
+}
+function Block({style, id, templateId, children}) {
   return (
     <section id={id} className={`${templateId} block`}>
       <div className="container">
