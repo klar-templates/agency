@@ -79,7 +79,7 @@ function Description({text}) {
   );
 }
 function Style({blockId, templateId, style}) {
-  const style = `
+  const themeStyle = `
   <!-- Theme CSS -->
   <style>
     .team-member {
@@ -137,5 +137,5 @@ function Style({blockId, templateId, style}) {
       background-color: ${style.block.social_links_hover_bg_color};
     }
   </style>`;
-  return <div dangerouslySetInnerHTML={{__html: style}} />;
+  return <div dangerouslySetInnerHTML={{__html: themeStyle}} />;
 }
