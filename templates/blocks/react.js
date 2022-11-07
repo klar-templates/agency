@@ -2,7 +2,7 @@ function KlarBlock(props) {
   const {heading, subHeading, image, team, text} = props.block;
   console.log('props: ', props)
   return (
-    <section id={props.block_id} class={`${props.template_id} block`}>
+    <section id={props.block_id} className={`${props.template_id} block`}>
       <Block>
         <Intro heading={heading} subHeading={subHeading} />
         <Members team={team} foo="dfsadf" />
