@@ -1,6 +1,6 @@
-function KlarBlock({block_id, template_id, block: {heading, subHeading, team, text} }) {
+function KlarBlock(props, {block_id, template_id, block: {heading, subHeading, team, text} }) {
   return (
-    <Block block={block} blockId={block_id} templateId={template_id}>
+    <Block block={props.block} blockId={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
       <Members team={team} />
       <Description text={text} />
