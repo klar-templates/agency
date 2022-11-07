@@ -1,19 +1,19 @@
 function KlarBlock({block_id, template_id, block: {heading, subHeading, team, text} }) {
   return (
-    <Block blockId={block_id} templateId={template_id}>
+    <Block block={block} blockId={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
       <Members team={team} />
       <Description text={text} />
     </Block>
   );
 }
-function Block({blockId, templateId, children}) {
+function Block({block, blockId, templateId, children}) {
   return (
     <section id={blockId} className={`${templateId} block`}>
       <div className="container">
         {children}
       </div>
-      <Style blockId={blockId} templateId={templateId} />
+      <Style block={block} blockId={blockId} templateId={templateId} />
     </section>
   );
 }
@@ -78,7 +78,7 @@ function Description({text}) {
     </div>
   );
 }
-function Style({blockId, templateId}) {
+function Style({blockId, templateId, block}) {
   const style = `
   <!-- Theme CSS -->
   <style>
@@ -127,14 +127,14 @@ function Style({blockId, templateId}) {
   <style>
     /* Team */
     #${blockId} {
-      background-color: {{ block.style.block.bg_color }};
-      padding-top: {{ block.style.block.padding_top }}px;
-      padding-bottom: {{ block.style.block.padding_bottom }}px;
+      background-color: ${block.style.block.bg_color };
+      padding-top: ${block.style.block.padding_top }px;
+      padding-bottom: ${block.style.block.padding_bottom }px;
     }
     #${blockId} ul.social-buttons li a:hover,
     #${blockId} ul.social-buttons li a:focus,
     #${blockId} ul.social-buttons li a:active {
-      background-color: {{ block.style.block.social_links_hover_bg_color }};
+      background-color: ${block.style.block.social_links_hover_bg_color};
     }
   </style>`;
   return <div dangerouslySetInnerHTML={{__html: style}} />;
