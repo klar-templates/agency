@@ -1,9 +1,7 @@
-{
-  init: function ({heading, subHeading, image, team, text}) {
-    return (
-      <div>
-        {heading}
-      </div>
-    );
-  }
+function KlarBlock({heading, subHeading, image, team, text}) {
+  return (
+    <div>
+      {heading}
+    </div>
+  );
 }
