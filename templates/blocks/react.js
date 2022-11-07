@@ -1,19 +1,19 @@
 function KlarBlock({block_id, template_id, block: {heading, subHeading, image, team, text} }) {
   return (
-    <Block id={block_id} templateId={template_id}>
+    <Block blockId={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
       <Members team={team} />
       <Description text={text} />
     </Block>
   );
 }
-function Block({style, id, templateId, children}) {
+function Block({blockId, templateId, children}) {
   return (
-    <section id={id} className={`${templateId} block`}>
+    <section id={blockId} className={`${templateId} block`}>
       <div className="container">
         {children}
       </div>
-      <Style id={id} templateId={templateId} />
+      <Style blockId={blockId} templateId={templateId} />
     </section>
   );
 }
@@ -78,13 +78,64 @@ function Description({text}) {
     </div>
   );
 }
-function Style({id, templateId}) {
+function Style({blockId, templateId}) {
   const style = `
-    <style>
-      body {
-        background-color: red;
-      }
-    </style>
-  `;
+  <!-- Theme CSS -->
+  <style>
+    .team-member {
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .team-member img {
+      margin: 0 auto;
+      border: 7px solid white;
+    }
+    .team-member h4 {
+      margin-top: 25px;
+      margin-bottom: 0;
+      text-transform: none;
+    }
+    .team-member p {
+      margin-top: 0;
+    }
+    .team-member ul.social-buttons {
+      margin-bottom: 0;
+    }
+    .team-member ul.social-buttons li a {
+      display: block;
+      background-color: #222222;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      font-size: 20px;
+      line-height: 40px;
+      color: white;
+      outline: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .team-member ul.social-buttons li a:hover,
+    .team-member ul.social-buttons li a:focus,
+    .team-member ul.social-buttons li a:active {
+      background-color: #fed136;
+    }
+  </style>
+  
+  <!-- Style CSS -->
+  <style>
+    /* Team */
+    #${blockId} {
+      background-color: {{ block.style.block.bg_color }};
+      padding-top: {{ block.style.block.padding_top }}px;
+      padding-bottom: {{ block.style.block.padding_bottom }}px;
+    }
+    #${blockId} ul.social-buttons li a:hover,
+    #${blockId} ul.social-buttons li a:focus,
+    #${blockId} ul.social-buttons li a:active {
+      background-color: {{ block.style.block.social_links_hover_bg_color }};
+    }
+  </style>`;
   return <div dangerouslySetInnerHTML={{__html: style}} />;
 }
