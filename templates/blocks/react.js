@@ -1,4 +1,4 @@
-function KlarBlock({heading, subHeading, image, team, text}) {
+const KlarBlock = function ({heading, subHeading, image, team, text}) {
   return (
     <div>
       {heading}
