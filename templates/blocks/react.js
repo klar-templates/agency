@@ -1,6 +1,5 @@
 function KlarBlock(props) {
   const {heading, subHeading, image, team, text} = props.block;
-  console.log('props: ', props)
   return (
     <Block id={props.block_id} templateId={props.template_id}>
       <Intro heading={heading} subHeading={subHeading} />
