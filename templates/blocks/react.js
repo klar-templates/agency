@@ -1,4 +1,4 @@
-function KlarBlockReact(props) {
+function KlarBlockreact(props) {
   const {heading, subHeading, image, team, text} = props.block;
   return (
     <Block>
