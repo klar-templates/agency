@@ -8,11 +8,21 @@ function KlarBlock({block_id, template_id, block: {heading, subHeading, team, te
   );
 }
 function Block({style, blockId, templateId, children}) {
+  
+  const [count, setCount] = React.useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  // React.useEffect(() => {
+  //   // Update the document title using the browser API
+  //   document.title = `You clicked ${count} times`;
+  // });
+
   return (
     <section id={blockId} className={`${templateId} block`}>
       <div className="container">
         {children}
       </div>
+      <button onClick={() => setCount(count++)}>{count}</button>
       <Style style={style} blockId={blockId} templateId={templateId} />
     </section>
   );
