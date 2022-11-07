@@ -21,7 +21,7 @@ function Block({id, templateId, children}) {
       <div className="container">
         {children}
       </div>
-      <div dangerouslySetInnerHTML={style} />
+      <div dangerouslySetInnerHTML={{__html: style}} />
     </section>
   );
 }
