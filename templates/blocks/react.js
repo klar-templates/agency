@@ -1,4 +1,5 @@
-function KlarBlock({heading, subHeading, image, team, text}) {
+function KlarBlock(props) {
+  const {heading, subHeading, image, team, text} = props.block;
   return (
     <Block>
       <Intro heading={heading} subHeading={subHeading} />
@@ -28,7 +29,7 @@ function Members({team}) {
   if (!team) {
     return false;
   }
-  
+
   return (
     <div className="row clearfix" data-field-array="team">
     { team.map((member, i) => {
