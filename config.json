@@ -746,6 +746,10 @@
               }
             }
           },
+          "timeline_end_text": {
+            "type": "string",
+            "title": "Text efter timeline" 
+          },
           "style": {
             "properties": {
               "block": {
@@ -1589,6 +1593,7 @@
             "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
           }
         ],
+        "timeline_end_text": "Be Part<br>Of Our<br>Story!",
         "style": {
           "block": {
             "bg_color": "{{theme.colors.bg_color}}",
