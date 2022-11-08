@@ -8,9 +8,10 @@ function KlarBlock({block_id, template_id, block: {heading, subHeading, team, te
   );
 }
 function Block({style, blockId, templateId, children}) {
-  if (!window.page) {
-    return <div>Client</div>
-  }
+  // Hydration check
+  // if (!window.page) {
+  //   return <div>Client</div>
+  // }
   return (
     <section id={blockId} className={`${templateId} block`}>
       <div className="container">
