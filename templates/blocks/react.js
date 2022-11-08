@@ -8,6 +8,7 @@ function KlarBlock({block_id, template_id, block: {heading, subHeading, team, te
   );
 }
 function Block({style, blockId, templateId, children}) {
+  console.log(window.page)
   return (
     <section id={blockId} className={`${templateId} block`}>
       <div className="container">
