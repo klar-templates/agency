@@ -1920,6 +1920,11 @@
       "title": "Footer",
       "name": "footer",
       "icon": "address-card-o"
+    },
+    {
+      "title": "React",
+      "name": "react",
+      "icon": "address-card-o"
     }
   ],
   "definitions": {
