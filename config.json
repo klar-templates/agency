@@ -1682,7 +1682,7 @@
           }
         }
       },
-      "team-2": {
+      "react": {
         "heading": "Our Amazing Team",
         "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
         "team": [
@@ -1927,8 +1927,8 @@
       "icon": "address-card-o"
     },
     {
-      "title": "Team 2",
-      "name": "team-2",
+      "title": "React",
+      "name": "react",
       "icon": "address-card-o"
     }
   ],
