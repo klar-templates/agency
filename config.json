@@ -1925,6 +1925,11 @@
       "title": "Footer",
       "name": "footer",
       "icon": "address-card-o"
+    },
+    {
+      "title": "Team 2",
+      "name": "team-2",
+      "icon": "address-card-o"
     }
   ],
   "definitions": {
