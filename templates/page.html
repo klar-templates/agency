@@ -263,10 +263,11 @@
   <![endif]-->
 </head>
 <body id="page-top" class="index">
-<div class="left"><!-- klar-content-full --></div>
+<div id="root"></div>
+<div class="full"><!-- klar-content --></div>
 <div class="left"><!-- klar-content-aside --></div>
 <div class="right"><!-- klar-content-main --></div>
-<div class="full"><!-- klar-content --></div>
+
 
 <!-- jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -278,11 +279,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 <!-- Test with React Klar Blocks -->
-<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script> -->
-<!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
-
-<!-- Babel-standalone -->
+<!-- React - version: 18 -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<!-- React DOM - version: 18 -->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<!-- React Router DOM - version: 5.2.0 -->
+<!-- <script src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"></script> -->
+<!-- Babel-standalone - version: 7.20.2 -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.20.2/babel.min.js"></script> -->
+<!-- Klar React Site - version: 0.0.0 -->
+<!-- <script src="blocks/react.js" type="text/babel" data-presets="react"></script> -->
+<!-- <script src="blocks/app.js" type="text/babel" data-presets="react"></script> -->
 
 <!-- Klarscript, executes when page is loaded. -->
 <script>

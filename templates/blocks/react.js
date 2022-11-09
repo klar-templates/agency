@@ -1,4 +1,4 @@
-function KlarBlock({block_id, template_id, block: {heading, subHeading, team, text, style} }) {
+function ReactKlarBlock({block_id, template_id, block: {heading, subHeading, team, text, style} }) {
   return (
     <Block style={style} blockId={block_id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />
