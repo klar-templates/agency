@@ -38,14 +38,17 @@ function Home(data) {
   const blockArray = [];
   for (const [key, value] of Object.entries(data)) {
     for (const [key1, value1] of Object.entries(value)) {
+      const block = value1.data;
+      block._id = key1;
+      block._type = value1.template_id;
       if (value1.template_id === 'navigation') {
-        blockArray.push(<Navigation2KlarBlock {...value1} />)
+        blockArray.push(<NavigationReact {...block} />)
       }
       if (value1.template_id === 'header') {
-        blockArray.push(<Header2KlarBlock {...value1} />)
+        blockArray.push(<HeaderReact {...block} />)
       }
       if (value1.template_id === 'team') {
-        blockArray.push(<TeamReact {...value1} />)
+        blockArray.push(<TeamReact {...block} />)
       }
     };
   };

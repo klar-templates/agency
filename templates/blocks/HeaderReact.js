@@ -1,8 +1,9 @@
-function Header2KlarBlock({id, template_id, data: {show_button, show_subtitle, show_title, title, subtitle, link, link_text, style, image} }) {
+function HeaderReact({_id, _type, show_button, show_subtitle, show_title, title, subtitle, link, link_text, style, image }) {
+  console.log(_id)
   return (
     <header
-      id={id}
-      className={`${template_id} klar-outline`}
+      id={_id}
+      className={`${_type} klar-outline`}
       data-field-string-file="image"
       data-placement="top"
       data-offset-top="210"
@@ -37,7 +38,7 @@ function Header2KlarBlock({id, template_id, data: {show_button, show_subtitle, s
       {style.show_overlay &&
         <div className="overlay"></div>
       }
-      <Style id={id} style={style} image={image} />
+      <Style id={_id} style={style} image={image} />
     </header>
   );
  

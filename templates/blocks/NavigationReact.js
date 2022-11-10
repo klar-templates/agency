@@ -1,8 +1,8 @@
-function Navigation2KlarBlock({id, template_id, data: {show_button, show_subtitle, logo_text, navigation, show_title, title, subtitle, link, link_text, item, style, image} }) {
+function NavigationReact({_id, _type, show_button, show_subtitle, logo_text, navigation, show_title, title, subtitle, link, link_text, item, style, image }) {
   return (
-    <nav id="main-nav" className={`navbar navbar-default navbar-custom navbar-fixed-top ${template_id}`}>
+    <nav id="main-nav" className={`navbar navbar-default navbar-custom navbar-fixed-top ${_type}`}>
       <div className="container">
-        <div id={template_id} className="navbar-header page-scroll">
+        <div id={_id} className="navbar-header page-scroll">
           <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
           </button>
@@ -45,7 +45,7 @@ function Navigation2KlarBlock({id, template_id, data: {show_button, show_subtitl
       {style.navbar.show_overlay &&
       <div className="overlay"></div>
       }
-      <Style id={id} style={style} image={image} />
+      <Style id={_id} style={style} image={image} />
     </nav>
     
   );

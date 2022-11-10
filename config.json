@@ -341,7 +341,7 @@
           }
         }
       },
-      "navigation2": {
+      "NavigationReact": {
         "title": "Navigation",
         "properties": {
           "logo_text": {
@@ -725,7 +725,7 @@
           }
         }
       },
-      "header2": {
+      "HeaderReact": {
         "title": "Header",
         "properties": {
           "subtitle": {
@@ -1828,7 +1828,7 @@
           }
         }
       },
-      "navigation2": {
+      "NavigationReact": {
         "logo_text": "The Page",
         "navigation": [
           {
@@ -1916,7 +1916,7 @@
           "bg_image_position_top": 0
         }
       },
-      "header2": {
+      "HeaderReact": {
         "title": "Create an account and start making your own web sites",
         "subtitle": "Edit everything on this site and if you like it...",
         "link": "#services",

@@ -1,6 +1,6 @@
-function TeamReact({block_id, template_id, block: {heading, subHeading, team, text, style} }) {
+function TeamReact({_id, _type, heading, subHeading, team, text, style }) {
   return (
-    <Block style={style} blockId={block_id} templateId={template_id}>
+    <Block style={style} blockId={_id} templateId={_type}>
       <Intro heading={heading} subHeading={subHeading} />
       <Members team={team} />
       <Description text={text} />
