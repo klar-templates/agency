@@ -2397,21 +2397,6 @@
       "title": "Footer",
       "name": "footer",
       "icon": "address-card-o"
-    },
-    {
-      "title": "Navigation 2",
-      "name": "navigation2",
-      "icon": "navicon"
-    },
-    {
-      "title": "Header 2",
-      "name": "header2",
-      "icon": "image"
-    },
-    {
-      "title": "Team 2",
-      "name": "TeamReact",
-      "icon": "address-card-o"
     }
   ],
   "definitions": {
