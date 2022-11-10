@@ -1,66 +1,76 @@
-const {
-  BrowserRouter,
-  Switch,
-  Route,
-  Link
-} = ReactRouterDOM;
+function Layout(data) {
+  head({title: klar.pageSettings.title, description: klar.pageSettings.description});
+  let headerBlock;
+  let footerBlock;
+  for (const [key, value] of Object.entries(klar.blocks)) {
+    if (value.template_id === 'navigation') {
+      headerBlock = value;
+    }
+    if (value.template_id === 'footer') {
+      footerBlock = value;
+    }
+  };
+  return (<>
+    <NavigationReact {...headerBlock} />
+    {data.children}
+    <FooterReact {...footerBlock} />
+  </>);
+}
+
+function Page(data) {
+  createContext(data);
+  console.log(data);
+  const blockArray = [];
+  for (const [key, value] of Object.entries(klar.blocks)) {
+    const block = value;
+    if (block.template_id === 'header') {
+      blockArray.push(<HeaderReact {...block} />)
+    }
+    if (block.template_id === 'team') {
+      blockArray.push(<TeamReact {...block} />)
+    }
+  };
+  return <Layout {...data}>{blockArray}</Layout>
+}
 
 function App(data) {
-  // block = data['team-1667249602880'];
-  // console.log(data)
   return (
     <BrowserRouter>
-      <>
-        {/* <nav>
-          <ul>
-            <li><Link to="/">Startsida</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/users">Users</Link></li>
-          </ul>
-        </nav> */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home data={data} />
-          </Route>
-        </Switch>
-      </>
+      <Switch>
+        {data.pages.map(page => {
+        return <Route path="/">
+          <Page {...data} />
+        </Route>
+        })}
+      </Switch>
     </BrowserRouter>
   );
 }
 
-function Home(data) {
-  const blockArray = [];
-  for (const [key, value] of Object.entries(data)) {
-    for (const [key1, value1] of Object.entries(value)) {
-      const block = value1.data;
-      block._id = key1;
-      block._type = value1.template_id;
-      if (value1.template_id === 'navigation') {
-        blockArray.push(<NavigationReact {...block} />)
-      }
-      if (value1.template_id === 'header') {
-        blockArray.push(<HeaderReact {...block} />)
-      }
-      if (value1.template_id === 'team') {
-        blockArray.push(<TeamReact {...block} />)
-      }
-    };
+function head(data) {
+  document.title = data.title;
+  document.description = data.description;
+}
+
+function createContext(data) {
+  const loc = useLocation();
+  const pathname = loc.pathname;
+  let currentPage;
+  if (pathname === '/templates/page-react.html' || pathname === '/') {
+    currentPage = data.pages.find(page => page._startpage === true);
+  } else {
+    currentPage = data.pages[0];
+  }
+  const pageSettings = currentPage.settings;
+  const blocks = data.pages[0].blocks;
+  window.klar = {
+    location: loc,
+    data,
+    pathname,
+    currentPage,
+    pageSettings,
+    blocks
   };
-  return blockArray;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
 
 function startApp(data) {
@@ -85,20 +95,37 @@ function init(siteName, templateName) {
       const templateConfig = values[1];
       const pages = siteData.pages;
       const configSettings = templateConfig.settings;
-      // const merge = Object.assign(configSettings.blocks, pages[0].blocks);
       const blocks = {};
-      // console.log(pages);
-      // console.log(configSettings);
       for (const [key, value] of Object.entries(pages[0].blocks)) {
         if (configSettings.blocks[value.template_id]) {
-          blocks[key] = value;
+          blocks[key] = Object.assign(configSettings.blocks[value.template_id], value);
           blocks[key].data = Object.assign(configSettings.blocks[value.template_id], value.data);
           blocks[key].id = key;
+          blocks[key]._id = key;
           blocks[key]._type = blocks[key].template_id;
         }
       };
-      data = blocks;
-      // console.log(data);
+      const pagesArr = [];
+      const page = {
+        _id: 'startsida-4565432156',
+        _type: 'startsida',
+        _startpage: true,
+        _menu_item_name: 'Startsida',
+        _meta: {
+          position: 0
+        },
+        blocks,
+        settings: {
+          title: 'Startsida',
+          description: 'En beskrivning'
+        }
+      };
+      pagesArr.push(page)
+      data = {
+        pages: pagesArr,
+        theme: templateConfig.settings.theme.presets.default
+      }
+      data;
       // localStorage.setItem('data', JSON.stringify(data));
       startApp(data);
     });
@@ -110,6 +137,7 @@ function init(siteName, templateName) {
 }
 
 // Site name in Klar
-// Template name 
+// Template name in Klar
 // This is for one page
 init('klar', 'agency');
+

@@ -18,7 +18,7 @@ function NavigationReact({_id, _type, show_button, show_subtitle, logo_text, nav
             <li className="hidden">
               <a href="#page-top"></a>
             </li>
-            <li className="page-scroll">
+            {/* <li className="page-scroll">
               <Link to="/">Startsida</Link>
             </li>
             <li className="page-scroll">
@@ -26,8 +26,16 @@ function NavigationReact({_id, _type, show_button, show_subtitle, logo_text, nav
             </li>
             <li className="page-scroll">
               <Link to="/users">Users</Link>
-            </li>
-            {navigation.map((item, index) => 
+            </li> */}
+            {klar.data.pages.map((page, i) => 
+              <li key={i}>
+                <Link
+                  className="page-scroll"
+                  to={'/'}
+                >{page._menu_item_name}</Link>
+              </li>
+            )}
+            {/* {navigation.map((item, index) => 
               <li>
                 <a
                   className="page-scroll"
@@ -38,7 +46,7 @@ function NavigationReact({_id, _type, show_button, show_subtitle, logo_text, nav
                   data-placement="bottom"
                 >{item.title}</a>
               </li>
-            )}
+            )} */}
           </ul>
         </div>
       </div>

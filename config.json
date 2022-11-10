@@ -1649,6 +1649,79 @@
           }
         }
       },
+      "FooterReact": {
+        "title": "Sidfot",
+        "properties": {
+          "copyright_text": {
+            "type": "string",
+            "title": "Copyright text" 
+          },
+          "social_links": {
+            "type": "array",
+            "title": "Social links",
+            "items": {
+              "type": "object",
+              "title": "Länk",
+              "display_field": "title",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Titel",
+                  "default": "Titel"
+                },
+                "icon": {
+                  "type": "string",
+                  "title": "Ikon",
+                  "default": "twitter",
+                  "ui:widget": "icon",
+                  "num": [
+                    "-1",
+                    "twitter",
+                    "facebook",
+                    "instagram",
+                    "linkedin"
+                  ],
+                  "numNames": [
+                    "Välj ikon",
+                    "Twitter",
+                    "Facebook",
+                    "Instagram",
+                    "LinkedIn"
+                  ]
+                },
+                "link": {
+                  "type": "string",
+                  "title": "Länk",
+                  "format": "uri",
+                  "default": "#youraccount"
+                }
+              }
+            }
+          },
+          "quick_links": {
+            "type": "array",
+            "title": "Snabblänkar",
+            "items": {
+              "type": "object",
+              "title": "Länk",
+              "display_field": "title",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Titel",
+                  "default": "New link"
+                },
+                "link": {
+                  "type": "string",
+                  "title": "Länk",
+                  "format": "uri",
+                  "default": "#"
+                }
+              }
+            }
+          }
+        }
+      },
       "decoration": {
         "title": "Decoration",
         "properties": {
@@ -2286,6 +2359,49 @@
         }
       },
       "footer": {
+        "copyright_text": "Copyright &copy; Your Website 2016",
+        "social_links": [
+          {
+            "title": "Twitter",
+            "icon": "twitter",
+            "link": "#youraccount"
+          },
+          {
+            "title": "Facebook",
+            "icon": "facebook",
+            "link": "#youraccount"
+          },
+          {
+            "title": "Instagram",
+            "icon": "instagram",
+            "link": "#youraccount"
+          },
+          {
+            "title": "LinkedIn",
+            "icon": "linkedin",
+            "link": "#youraccount"
+          }
+        ],
+        "quick_links": [
+          {
+            "title": "Privacy Policy",
+            "link": ""
+          },
+          {
+            "title": "Terms of Use",
+            "link": ""
+          }
+        ],
+        "style": {
+          "block": {
+            "bg_color": "{{theme.colors.bg_color}}",
+            "social_links_hover_bg_color": "{{theme.colors.primary_color}}",
+            "padding_top": 25,
+            "padding_bottom": 25
+          }
+        }
+      },
+      "FooterReact": {
         "copyright_text": "Copyright &copy; Your Website 2016",
         "social_links": [
           {
