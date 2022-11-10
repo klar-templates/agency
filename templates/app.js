@@ -5,11 +5,11 @@ function App(data) {
     Route,
     Link
   } = ReactRouterDOM;
-  block = data['team-1667249602880'];
+  // block = data['team-1667249602880'];
   // console.log(data)
   return (
     <BrowserRouter>
-      <div>
+      <>
         <nav>
           <ul>
             <li><Link to="/">Startsida</Link></li>
@@ -25,16 +25,30 @@ function App(data) {
             <Users />
           </Route>
           <Route path="/">
-            <Home {...block} />
+            <Home data={data} />
           </Route>
         </Switch>
-      </div>
+      </>
     </BrowserRouter>
   );
 }
 
-function Home(block) {
-  return <ReactKlarBlock {...block} />
+function Home(data) {
+  const blockArray = [];
+  for (const [key, value] of Object.entries(data)) {
+    for (const [key1, value1] of Object.entries(value)) {
+      if (value1.template_id === 'navigation') {
+        blockArray.push(<Navigation2KlarBlock {...value1} />)
+      }
+      if (value1.template_id === 'header') {
+        blockArray.push(<Header2KlarBlock {...value1} />)
+      }
+      if (value1.template_id === 'team') {
+        blockArray.push(<Team2KlarBlock {...value1} />)
+      }
+    };
+  };
+  return blockArray;
 }
 
 function About() {
@@ -73,10 +87,10 @@ function init(siteName, templateName) {
       // console.log(configSettings);
       for (const [key, value] of Object.entries(pages[0].blocks)) {
         if (configSettings.blocks[value.template_id]) {
-          blocks[key] = {};
-          blocks[key].data = Object.assign(configSettings.blocks[value.template_id], value);
+          blocks[key] = value;
+          blocks[key].data = Object.assign(configSettings.blocks[value.template_id], value.data);
           blocks[key].id = key;
-          blocks[key].template_id = key;
+          blocks[key]._type = blocks[key].template_id;
         }
       };
       data = blocks;
