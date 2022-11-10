@@ -1,5 +1,4 @@
 function HeaderReact({_id, _type, show_button, show_subtitle, show_title, title, subtitle, link, link_text, style, image }) {
-  console.log(_id)
   return (
     <header
       id={_id}
