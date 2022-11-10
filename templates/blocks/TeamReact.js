@@ -1,4 +1,4 @@
-function Team2KlarBlock({id, template_id, data: {heading, subHeading, team, text, style} }) {
+function TeamReact({id, template_id, data: {heading, subHeading, team, text, style} }) {
   return (
     <Block style={style} blockId={id} templateId={template_id}>
       <Intro heading={heading} subHeading={subHeading} />

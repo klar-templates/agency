@@ -45,7 +45,7 @@ function Home(data) {
         blockArray.push(<Header2KlarBlock {...value1} />)
       }
       if (value1.template_id === 'team') {
-        blockArray.push(<Team2KlarBlock {...value1} />)
+        blockArray.push(<TeamReact {...value1} />)
       }
     };
   };

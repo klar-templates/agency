@@ -1313,7 +1313,7 @@
           }
         }
       },
-      "team2": {
+      "TeamReact": {
         "title": "Team 2",
         "properties": {
           "heading": {
@@ -2154,7 +2154,7 @@
           }
         }
       },
-      "team2": {
+      "TeamReact": {
         "heading": "Our Amazing Team",
         "sub_heading": "Lorem ipsum dolor sit amet consectetur.",
         "team": [
