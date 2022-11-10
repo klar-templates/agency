@@ -18,6 +18,15 @@ function Navigation2KlarBlock({id, template_id, data: {show_button, show_subtitl
             <li className="hidden">
               <a href="#page-top"></a>
             </li>
+            <li className="page-scroll">
+              <Link to="/">Startsida</Link>
+            </li>
+            <li className="page-scroll">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="page-scroll">
+              <Link to="/users">Users</Link>
+            </li>
             {navigation.map((item, index) => 
               <li>
                 <a
@@ -148,11 +157,11 @@ function Navigation2KlarBlock({id, template_id, data: {show_button, show_subtitl
       .navbar-custom {
         background-color: ${style.navbar.bg_color};
         border-bottom: solid ${style.navbar.border_bottom_width}px ${style.navbar.border_bottom_color};
-        ${style.navbar.sticky ? 'position: absolute;': ''}
+        ${style.navbar.sticky ? 'position: absolute;' : ''}
       }
       @media (min-width: 768px) {
         .navbar-custom {
-          background-color: ${style.navbar.transparent} ? transparent : ${style.navbar.bg_color};
+          background-color: ${style.navbar.transparent ? 'transparent' : style.navbar.bg_color};
           padding-top: ${style.navbar.padding_top}px;
           padding-bottom: ${style.navbar.padding_bottom}px;
         }

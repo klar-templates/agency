@@ -1,22 +1,23 @@
+const {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link
+} = ReactRouterDOM;
+
 function App(data) {
-  const {
-    BrowserRouter,
-    Switch,
-    Route,
-    Link
-  } = ReactRouterDOM;
   // block = data['team-1667249602880'];
   // console.log(data)
   return (
     <BrowserRouter>
       <>
-        <nav>
+        {/* <nav>
           <ul>
             <li><Link to="/">Startsida</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/users">Users</Link></li>
           </ul>
-        </nav>
+        </nav> */}
         <Switch>
           <Route path="/about">
             <About />
