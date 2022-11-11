@@ -2452,7 +2452,8 @@
   "page_types": [
     {
       "title": "Startsida",
-      "name": "startpage"
+      "name": "startpage",
+      "default_blocks": ["navigation", "header", "footer"]
     },
     {
       "title": "Undersida",
