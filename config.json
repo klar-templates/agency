@@ -94,7 +94,7 @@
     "blocks": {
       "navigation": {
         "title": "Navigation",
-        "global": true,
+        "global_block": true,
         "properties": {
           "logo_text": {
             "type": "string",
