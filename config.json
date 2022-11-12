@@ -95,6 +95,8 @@
       "navigation": {
         "title": "Navigation",
         "global": true,
+        "static": true,
+        "hidden": true,
         "properties": {
           "logo_text": {
             "type": "string",
