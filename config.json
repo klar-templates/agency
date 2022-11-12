@@ -1610,6 +1610,9 @@
         "title": "Sidfot",
         "name": "footer",
         "icon": "address-card-o",
+        "global": true,
+        "static": true,
+        "hidden": true,
         "properties": {
           "copyright_text": {
             "type": "string",
