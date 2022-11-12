@@ -94,6 +94,8 @@
     "blocks": {
       "navigation": {
         "title": "Navigation",
+        "name": "navigation",
+        "icon": "navicon",
         "global": true,
         "static": true,
         "hidden": true,
@@ -346,6 +348,8 @@
       },
       "NavigationReact": {
         "title": "Navigation",
+        "name": "NavigationReact",
+        "icon": "navicon",
         "properties": {
           "logo_text": {
             "type": "string",
@@ -595,6 +599,8 @@
       },
       "header": {
         "title": "Header",
+        "name": "header",
+        "icon": "image",
         "properties": {
           "subtitle": {
             "type": "string",
@@ -730,6 +736,8 @@
       },
       "HeaderReact": {
         "title": "Header",
+        "name": "HeaderReact",
+        "icon": "image",
         "properties": {
           "subtitle": {
             "type": "string",
@@ -865,6 +873,8 @@
       },
       "services": {
         "title": "Services",
+        "name": "services",
+        "icon": "file-text-o",
         "ui:css_selector": "#services",
         "properties": {
           "heading": {
@@ -930,6 +940,8 @@
       },
       "portfolio": {
         "title": "Portfolio",
+        "name": "portfolio",
+        "icon": "book",
         "properties": {
           "heading": {
             "type": "string",
@@ -1091,6 +1103,8 @@
       },
       "about": {
         "title": "About",
+        "name": "about",
+        "icon": "group",
         "ui:css_selector": "#about",
         "properties": {
           "heading": {
@@ -1205,6 +1219,8 @@
       },
       "team": {
         "title": "Team",
+        "name": "team",
+        "icon": "group",
         "properties": {
           "heading": {
             "type": "string",
@@ -1318,6 +1334,8 @@
       },
       "TeamReact": {
         "title": "Team 2",
+        "name": "TeamReact",
+        "icon": "group",
         "properties": {
           "heading": {
             "type": "string",
@@ -1431,6 +1449,8 @@
       },
       "clients": {
         "title": "Clients",
+        "name": "clients",
+        "icon": "group",
         "ui:css_selector": ".clients",
         "properties": {
           "items": {
@@ -1478,6 +1498,8 @@
       },
       "contact": {
         "title": "Contact",
+        "name": "contact",
+        "icon": "address-card-o",
         "properties": {
           "heading": {
             "type": "string",
@@ -1581,6 +1603,8 @@
       },
       "footer": {
         "title": "Sidfot",
+        "name": "footer",
+        "icon": "address-card-o",
         "properties": {
           "copyright_text": {
             "type": "string",
@@ -1654,6 +1678,8 @@
       },
       "FooterReact": {
         "title": "Sidfot",
+        "name": "FooterReact",
+        "icon": "address-card-o",
         "properties": {
           "copyright_text": {
             "type": "string",
@@ -1727,6 +1753,8 @@
       },
       "decoration": {
         "title": "Decoration",
+        "name": "decoration",
+        "icon": "image",
         "properties": {
           "image": {
             "type": "string",
