@@ -1340,6 +1340,7 @@
         "title": "Team 2",
         "name": "TeamReact",
         "icon": "group",
+        "hidden": true,
         "properties": {
           "heading": {
             "type": "string",
