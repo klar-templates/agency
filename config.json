@@ -98,7 +98,7 @@
         "icon": "navicon",
         "global": true,
         "static": true,
-        "idden": true,
+        "hidden": true,
         "properties": {
           "logo_text": {
             "type": "string",
