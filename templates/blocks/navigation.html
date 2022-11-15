@@ -40,194 +40,194 @@
   <!-- /.container-fluid -->{% if block.style.navbar.show_overlay %}
   <div class="overlay"></div>
   {% endif %}
-</nav>
 
-<!-- Theme CSS -->
-<style>
-  .navbar-custom {
-    background-color: #222222;
-    border-color: transparent;
-    margin-bottom: 0;
-    top: 0;
-  }
-  .navbar-custom .container {
-    position: relative;
-    z-index: 1;
-  }
-  .navbar-custom .navbar-brand {
-    color: #fed136;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-  }
-  .navbar-brand > img {
-    max-width: 100%;
-  }
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-brand:focus,
-  .navbar-custom .navbar-brand:active,
-  .navbar-custom .navbar-brand.active {
-    color: #fec503;
-  }
-  .navbar-custom .navbar-collapse {
-    border-color: rgba(255, 255, 255, 0.02);
-  }
-  .navbar-custom .navbar-toggle {
-    background-color: #fed136;
-    border-color: #fed136;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    color: white;
-    font-size: 12px;
-  }
-  .navbar-custom .navbar-toggle:hover,
-  .navbar-custom .navbar-toggle:focus {
-    background-color: #fed136;
-  }
-  .navbar-custom .nav li a {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: white;
-  }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    color: #fed136;
-    outline: none;
-  }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 0;
-    color: white;
-    background-color: #fed136;
-  }
-  .navbar-custom .navbar-nav > .active > a:hover,
-  .navbar-custom .navbar-nav > .active > a:focus {
-    color: white;
-    background-color: #fec503;
-  }
-  .navbar-custom .overlay {
-    background-color: #000000;
-    height: 100%;
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  @media (min-width: 768px) {
+  <!-- Theme CSS -->
+  <style>
     .navbar-custom {
-      background-color: transparent;
-      padding: 25px 0;
-      -webkit-transition: padding 0.3s;
-      -moz-transition: padding 0.3s;
-      transition: padding 0.3s;
-      border: none;
+      background-color: #222222;
+      border-color: transparent;
+      margin-bottom: 0;
+      top: 0;
+    }
+    .navbar-custom .container {
+      position: relative;
+      z-index: 1;
     }
     .navbar-custom .navbar-brand {
-      font-size: 2em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
+      color: #fed136;
+      font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    }
+    .navbar-brand > img {
+      max-width: 100%;
+    }
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .navbar-brand:focus,
+    .navbar-custom .navbar-brand:active,
+    .navbar-custom .navbar-brand.active {
+      color: #fec503;
+    }
+    .navbar-custom .navbar-collapse {
+      border-color: rgba(255, 255, 255, 0.02);
+    }
+    .navbar-custom .navbar-toggle {
+      background-color: #fed136;
+      border-color: #fed136;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      color: white;
+      font-size: 12px;
+    }
+    .navbar-custom .navbar-toggle:hover,
+    .navbar-custom .navbar-toggle:focus {
+      background-color: #fed136;
+    }
+    .navbar-custom .nav li a {
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: white;
+    }
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .nav li a:focus {
+      color: #fed136;
+      outline: none;
     }
     .navbar-custom .navbar-nav > .active > a {
-      border-radius: 3px;
+      border-radius: 0;
+      color: white;
+      background-color: #fed136;
     }
-    .navbar-custom.affix {
-      background-color: #222222;
-      padding: 10px 0;
+    .navbar-custom .navbar-nav > .active > a:hover,
+    .navbar-custom .navbar-nav > .active > a:focus {
+      color: white;
+      background-color: #fec503;
     }
-    .navbar-custom.affix .navbar-brand {
-      font-size: 1.5em;
+    .navbar-custom .overlay {
+      background-color: #000000;
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
-  }
-</style>
-
-<!-- Style CSS -->
-<style>
-  /* Block */
-  .navbar-custom {
-    background-color: {{ block.style.navbar.bg_color }};
-    border-bottom: solid {{ block.style.navbar.border_bottom_width }}px {{ block.style.navbar.border_bottom_color }};
-    {% if block.style.navbar.sticky === false %}
-    position: absolute;
-    {% endif %};
-  }
-  @media (min-width: 768px) {
-    .navbar-custom {
-      background-color: {% if block.style.navbar.transparent %} transparent {% else %} {{ block.style.navbar.bg_color }} {% endif %};
-      padding-top: {{ block.style.navbar.padding_top }}px;
-      padding-bottom: {{ block.style.navbar.padding_bottom }}px;
-    }
-    /* Margin top next block */
-    .navbar-custom + *,
-    [data-id="{{ block_id }}"] + * {
-      margin-top: {{ block.style.navbar.margin_top_next_block }}px;
-    }
-  } 
-  .navbar-custom.affix {
-    background-color: {{ block.style.navbar.bg_color }};
-  }
-  .navbar-custom.affix .overlay {
-    opacity: 1;
-  }
-  .navbar-custom .overlay {
-    background-color: {{ block.style.navbar.overlay_bg_color }};
-    opacity: {{ block.style.navbar.overlay_opacity/100 }};
-  }
-  /* Logo */
-  .navbar-custom .navbar-brand {
-    color: {{ block.style.logo.text_color }};
-    font-family: "{{ block.style.logo.font_family }}","Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
-  {% if block.style.logo.show %}
     @media (min-width: 768px) {
+      .navbar-custom {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+      }
       .navbar-custom .navbar-brand {
-        padding-top: {{ block.style.logo.padding_top }}px;
-        width:{{ block.style.logo.width }}px;
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .navbar-custom .navbar-nav > .active > a {
+        border-radius: 3px;
+      }
+      .navbar-custom.affix {
+        background-color: #222222;
+        padding: 10px 0;
+      }
+      .navbar-custom.affix .navbar-brand {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+
+  <!-- Style CSS -->
+  <style>
+    /* Block */
+    .navbar-custom {
+      background-color: {{ block.style.navbar.bg_color }};
+      border-bottom: solid {{ block.style.navbar.border_bottom_width }}px {{ block.style.navbar.border_bottom_color }};
+      {% if block.style.navbar.sticky === false %}
+      position: absolute;
+      {% endif %};
+    }
+    @media (min-width: 768px) {
+      .navbar-custom {
+        background-color: {% if block.style.navbar.transparent %} transparent {% else %} {{ block.style.navbar.bg_color }} {% endif %};
+        padding-top: {{ block.style.navbar.padding_top }}px;
+        padding-bottom: {{ block.style.navbar.padding_bottom }}px;
+      }
+      /* Margin top next block */
+      .navbar-custom + *,
+      [data-id="{{ block_id }}"] + * {
+        margin-top: {{ block.style.navbar.margin_top_next_block }}px;
       }
     } 
-  {% endif %}
-  .navbar-custom .navbar-brand:hover {
-    color: {{ block.style.logo.text_hover_color }};
-  }
-  .navbar-custom .navbar-brand:active {
-    color: {{ block.style.logo.text_active_color }};
-  }
-  .navbar-custom .navbar-brand:focus {
-    color: {{ block.style.logo.text_focus_color }};
-  }
-  /* Navigation */
-  .navbar-custom .nav li a {
-    color: {{ block.style.navigation.text_color }};
-  }
-  .navbar-custom .nav li a:hover {
-    color: {{ block.style.navigation.text_hover_color }};
-  }
-  .navbar-custom .nav li a:focus {
-    color: {{ block.style.navigation.text_focus_color }};
-  }
-  .navbar-custom .nav li a {
-    background-color: {{ block.style.navigation.bg_text_color }};
-  }
-  .navbar-custom .nav li a:hover {
-    background-color: {{ block.style.navigation.bg_text_hover_color }};
-  }
-  .navbar-custom .navbar-nav > .active > a,
-  .navbar-custom .navbar-nav > .active > a:hover {
-    background-color: {{ block.style.navigation.bg_text_active_color }};
-  }
-  .navbar-custom .navbar-nav > .active > a:focus {
-    background-color: {{ block.style.navigation.bg_text_focus_color }};
-  }
-  .navbar-custom .navbar-toggle {
-    background-color: {{ block.style.navigation.mobile_menu_button_bg_color }};
-    border-color: {{ block.style.navigation.mobile_menu_button_bg_color }};
-  }
-  .navbar-custom .navbar-toggle:hover {
-    background-color: {{ block.style.navigation.mobile_menu_button_hover_bg_color }};
-    border-color: {{ block.style.navigation.mobile_menu_button_hover_bg_color }};
-  }
-  .navbar-custom .navbar-toggle:focus {
-    background-color: {{ block.style.navigation.mobile_menu_button_focus_bg_color }};
-    border-color: {{ block.style.navigation.mobile_menu_button_focus_bg_color }};
-  }
-</style>
+    .navbar-custom.affix {
+      background-color: {{ block.style.navbar.bg_color }};
+    }
+    .navbar-custom.affix .overlay {
+      opacity: 1;
+    }
+    .navbar-custom .overlay {
+      background-color: {{ block.style.navbar.overlay_bg_color }};
+      opacity: {{ block.style.navbar.overlay_opacity/100 }};
+    }
+    /* Logo */
+    .navbar-custom .navbar-brand {
+      color: {{ block.style.logo.text_color }};
+      font-family: "{{ block.style.logo.font_family }}","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    {% if block.style.logo.show %}
+      @media (min-width: 768px) {
+        .navbar-custom .navbar-brand {
+          padding-top: {{ block.style.logo.padding_top }}px;
+          width:{{ block.style.logo.width }}px;
+        }
+      } 
+    {% endif %}
+    .navbar-custom .navbar-brand:hover {
+      color: {{ block.style.logo.text_hover_color }};
+    }
+    .navbar-custom .navbar-brand:active {
+      color: {{ block.style.logo.text_active_color }};
+    }
+    .navbar-custom .navbar-brand:focus {
+      color: {{ block.style.logo.text_focus_color }};
+    }
+    /* Navigation */
+    .navbar-custom .nav li a {
+      color: {{ block.style.navigation.text_color }};
+    }
+    .navbar-custom .nav li a:hover {
+      color: {{ block.style.navigation.text_hover_color }};
+    }
+    .navbar-custom .nav li a:focus {
+      color: {{ block.style.navigation.text_focus_color }};
+    }
+    .navbar-custom .nav li a {
+      background-color: {{ block.style.navigation.bg_text_color }};
+    }
+    .navbar-custom .nav li a:hover {
+      background-color: {{ block.style.navigation.bg_text_hover_color }};
+    }
+    .navbar-custom .navbar-nav > .active > a,
+    .navbar-custom .navbar-nav > .active > a:hover {
+      background-color: {{ block.style.navigation.bg_text_active_color }};
+    }
+    .navbar-custom .navbar-nav > .active > a:focus {
+      background-color: {{ block.style.navigation.bg_text_focus_color }};
+    }
+    .navbar-custom .navbar-toggle {
+      background-color: {{ block.style.navigation.mobile_menu_button_bg_color }};
+      border-color: {{ block.style.navigation.mobile_menu_button_bg_color }};
+    }
+    .navbar-custom .navbar-toggle:hover {
+      background-color: {{ block.style.navigation.mobile_menu_button_hover_bg_color }};
+      border-color: {{ block.style.navigation.mobile_menu_button_hover_bg_color }};
+    }
+    .navbar-custom .navbar-toggle:focus {
+      background-color: {{ block.style.navigation.mobile_menu_button_focus_bg_color }};
+      border-color: {{ block.style.navigation.mobile_menu_button_focus_bg_color }};
+    }
+  </style>
+</nav>
