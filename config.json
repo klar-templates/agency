@@ -1941,7 +1941,7 @@
             "show_overlay": false,
             "overlay_bg_color": "#000000",
             "overlay_opacity": 20,
-            "margin_top_next_block": 0
+            "margin_top_next_block": 100
           },
           "logo": {
             "text_color": "{{theme.colors.primary_color}}",
