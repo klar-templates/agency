@@ -1936,8 +1936,8 @@
             "bg_color": "#fff",
             "padding_top": 25,
             "padding_bottom": 25,
-            "border_bottom_width": 1,
-            "border_bottom_color": "#f1f1f1",
+            "border_bottom_width": 0,
+            "border_bottom_color": "#222",
             "show_overlay": false,
             "overlay_bg_color": "#000000",
             "overlay_opacity": 20,
@@ -1954,7 +1954,7 @@
             "show": false
           },
           "navigation": {
-            "text_color": "{{theme.colors.primary_color}}",
+            "text_color": "#fff",
             "text_hover_color": "{{theme.colors.primary_color}}",
             "text_active_color": "{{theme.colors.primary_color}}",
             "text_focus_color": "{{theme.colors.primary_color}}",
