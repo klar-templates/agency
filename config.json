@@ -1931,7 +1931,7 @@
         ],
         "style": {
           "navbar": {
-            "transparent": false,
+            "transparent": true,
             "sticky": true,
             "bg_color": "#fff",
             "padding_top": 25,
