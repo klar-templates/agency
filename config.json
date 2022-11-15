@@ -1954,7 +1954,7 @@
             "show": false
           },
           "navigation": {
-            "text_color": "#fff",
+            "text_color": "{{theme.colors.primary_color}}",
             "text_hover_color": "{{theme.colors.primary_color}}",
             "text_active_color": "{{theme.colors.primary_color}}",
             "text_focus_color": "{{theme.colors.primary_color}}",
