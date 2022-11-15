@@ -1931,8 +1931,8 @@
         ],
         "style": {
           "navbar": {
-            "transparent": true,
-            "sticky": true,
+            "transparent": false,
+            "sticky": false,
             "bg_color": "#222",
             "padding_top": 25,
             "padding_bottom": 25,
@@ -1941,7 +1941,7 @@
             "show_overlay": false,
             "overlay_bg_color": "#000000",
             "overlay_opacity": 20,
-            "margin_top_next_block": 100
+            "margin_top_next_block": 0
           },
           "logo": {
             "text_color": "{{theme.colors.primary_color}}",
