@@ -31,7 +31,7 @@ function NavigationReact({_id, _type, show_button, show_subtitle, logo_text, nav
               <li key={i}>
                 <Link
                   className="page-scroll"
-                  to={'/'}
+                  to={page._path}
                 >{page._menu_item_name}</Link>
               </li>
             )}

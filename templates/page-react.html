@@ -297,22 +297,6 @@
 <script src="blocks/FooterReact.js" type="text/babel" data-presets="react"></script>
 <script src="app.js" type="text/babel" data-presets="react"></script>
 
-<!-- Klarscript, executes when page is loaded. -->
-<script>
-  function klarScript() {
-    // Add 'klar-modal-open' CSS class, when modal is opened
-    $('.modal').on('show.bs.modal', function (event) {
-      var modal = this;
-      modal.classList.add('klar-modal-open');
-    });
-    $('.modal').on('hide.bs.modal', function (event) {
-      var modal = this;
-      modal.classList.remove('klar-modal-open');
-    });
-  }
-  klarScript();
-</script>
-
 <!-- Theme JavaScript -->
 <script>
   // Agency Theme JavaScript
@@ -350,6 +334,22 @@
       }
     });
   })(jQuery);
+</script>
+
+<!-- Klarscript, executes when page is loaded. -->
+<script>
+  function klarScript() {
+    // Add 'klar-modal-open' CSS class, when modal is opened
+    $('.modal').on('show.bs.modal', function (event) {
+      var modal = this;
+      modal.classList.add('klar-modal-open');
+    });
+    $('.modal').on('hide.bs.modal', function (event) {
+      var modal = this;
+      modal.classList.remove('klar-modal-open');
+    });
+  }
+  klarScript();
 </script>
 
 <!-- Klar Script -->

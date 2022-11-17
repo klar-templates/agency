@@ -7,7 +7,8 @@ function FooterReact({_id, _type, copyright_text, social_links, quick_links, sty
           <span
             className="copyright"
             data-field-string="copyright_text"
-          >{copyright_text}</span>
+            dangerouslySetInnerHTML={{__html: copyright_text}}
+          />
         </div>
         <div className="col-md-4" style={{position: 'static'}}>
           <ul className="list-inline social-buttons">
