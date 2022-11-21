@@ -350,9 +350,9 @@
         "title": "Navigation",
         "name": "NavigationReact",
         "icon": "navicon",
-        "global": true,
-        "static": true,
-        "hidden": true,
+        "lobal": true,
+        "tatic": true,
+        "idden": true,
         "properties": {
           "logo_text": {
             "type": "string",
