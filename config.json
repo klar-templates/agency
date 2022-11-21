@@ -352,7 +352,7 @@
         "icon": "navicon",
         "lobal": true,
         "tatic": true,
-        "idden": true,
+        "hidden": true,
         "properties": {
           "logo_text": {
             "type": "string",
